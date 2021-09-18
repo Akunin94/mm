@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+.footer {
+    border-top: 8px solid #fff;
+    background: $color1;
+    &__container {
+        max-width: $containerWidth;
+        margin: auto;
+        padding: 33px;
+        display: flex;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        min-width: 280px;
+        max-width: 280px;
+        margin-right: 18px;
+        font-size: 0;
+        text-decoration: none;
+        img {
+            margin-right: 2px;
+        }
+        &--text {
+            font-size: 19px;
+            line-height: 23px;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}
