@@ -1,0 +1,51 @@
+@charset 'utf-8';
+
+.breadcrumbs {
+    margin-bottom: 32px;
+    &__item {
+        color: #7c7c7c;
+        text-decoration: none;
+        position: relative;
+        padding: 0 0 0 18px;
+        font-size: 12px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1;
+        &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 50%;
+            margin-top: -4px;
+            bottom: 0;
+            width: 7px;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg width='7' height='8' viewBox='0 0 7 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M5.30657 3.80793L2.07424 0.575609C1.96724 0.472263 1.79672 0.47523 1.69337 0.582238C1.59255 0.686626 1.59255 0.852109 1.69337 0.95648L4.73526 3.99837L1.69337 7.04026C1.58821 7.14543 1.58821 7.31595 1.69337 7.42113C1.79857 7.52629 1.96907 7.52629 2.07424 7.42113L5.30657 4.1888C5.41173 4.08361 5.41173 3.91311 5.30657 3.80793Z' fill='%2337283C'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='7' height='7' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+                0 0 no-repeat;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+        &:first-child {
+            top: -3px;
+            padding: 0;
+            width: 14px;
+            height: 12px;
+            font-size: 0;
+            text-decoration: none;
+            &:before {
+                background-image: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.99997 3.03455L2.18457 6.73987V11.7041H6.0539V8.06615H8.10947V11.7041H11.8154V6.73987L6.99997 3.03455Z' fill='%2337283C'/%3E%3Cpath d='M12.0171 3.85957V1.32139H9.98911V2.29947L7 0L0 5.385L0.966301 6.64106L7 1.99828L13.0337 6.64109L14 5.38502L12.0171 3.85957Z' fill='%2337283C'/%3E%3C/svg%3E%0A");
+                width: 14px;
+                height: 12px;
+            }
+        }
+        &:nth-child(2) {
+            color: #37283c;
+            padding: 0;
+            margin-left: 10px;
+            &:before {
+                display: none;
+            }
+        }
+    }
+}

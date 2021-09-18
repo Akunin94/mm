@@ -3,6 +3,11 @@
 @import '_variables';
 @import '_base';
 
+// COMPONENTS
 @import '_header';
 @import '_footer';
+@import '_breadcrumbs';
+
+// PAGES
 @import '_main';
+@import '_category';

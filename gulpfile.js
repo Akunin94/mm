@@ -81,7 +81,7 @@ function scripts() {
 }
 
 function styles() {
-	return src([`app/styles/*.*`, `!app/styles/_*.*`])
+	return src([`app/styles/*.*`])
 		.pipe(eval(`${preprocessor}glob`)())
 		.pipe(eval(preprocessor)({ 'include css': true }))
 		.pipe(postCss([

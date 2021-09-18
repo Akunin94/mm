@@ -1,8 +1,11 @@
-// // Import vendor jQuery plugin example
-// import '~/app/libs/mmenu/dist/mmenu.js'
+import $ from 'jquery'
+import 'slick-carousel'
 
-document.addEventListener('DOMContentLoaded', () => {
-
-	// Custom JS
-
-})
+$(function(){
+	if ($('.main__slider--js').length) {
+		$('.main__slider--js').slick({
+			rows: false,
+			autoplay: true
+		})
+	}
+});

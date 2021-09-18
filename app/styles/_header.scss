@@ -1,10 +1,24 @@
 @charset 'utf-8';
 
-.header {
+$block: '.header';
+
+#{$block} {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
+    z-index: 1;
+    &.inner {
+        position: relative;
+        margin-bottom: 16px;
+        #{$block}__logo--text,
+        #{$block}__menu > li > a,
+        #{$block}__phones,
+        #{$block}__phones a,
+        #{$block}__email a {
+            color: #000;
+        }
+    }
     &__inner {
         max-width: $containerWidth;
         margin-left: auto;
@@ -85,8 +99,8 @@
         margin: 0;
         border-left: 1px solid rgba(255, 255, 255, 0.14);
         border-right: 1px solid rgba(255, 255, 255, 0.14);
-        min-width: 211px;
-        max-width: 211px;
+        min-width: 240px;
+        max-width: 240px;
         justify-content: flex-end;
         transition: 0.2s;
         position: relative;
@@ -131,8 +145,8 @@
             font-size: 14px;
             color: #d4d4d450;
             transition: 0.2s;
-            min-width: 166px;
-            max-width: 166px;
+            min-width: 195px;
+            max-width: 195px;
             &::placeholder {
                 color: #d4d4d450;
             }
@@ -251,7 +265,7 @@
                 text-decoration: none;
                 font-size: 14px;
                 line-height: 1;
-                padding: 5px;
+                padding: 5px 8px;
             }
             &:hover > a {
                 text-decoration: underline;
@@ -269,13 +283,14 @@
         margin: 0 0 0 10px;
         color: #fff;
         a {
+            margin-left: 5px;
             color: #fff;
             text-decoration: none;
         }
     }
     &__email {
         font-size: 14px;
-        margin-left: 13px;
+        margin-left: 15px;
         a {
             color: #fff;
             text-decoration: none;
