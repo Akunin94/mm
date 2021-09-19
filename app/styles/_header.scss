@@ -90,9 +90,9 @@ $block: '.header';
             &:hover > a {
                 color: #a0a3bd;
             }
-            & > *[href]:last-child:before {
-                display: none;
-            }
+            // & > *[href]:last-child:before {
+            //     display: none;
+            // }
         }
     }
     &__search {

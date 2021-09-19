@@ -1809,3 +1809,7 @@ input[type='range'].styler::-ms-thumb {
     height: 16px;
     width: 16px;
 }
+.jq-selectbox {
+    max-width: 100%;
+    min-width: 168px;
+}
