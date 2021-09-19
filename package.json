@@ -45,6 +45,8 @@
 	},
 	"dependencies": {
 		"jquery": "^3.6.0",
+		"jquery.formstyler-modern": "^2.1.6",
+		"nouislider": "^15.4.0",
 		"slick-carousel": "^1.8.1"
 	}
 }

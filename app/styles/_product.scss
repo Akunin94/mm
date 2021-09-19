@@ -1,0 +1,78 @@
+@charset 'utf-8';
+
+.product {
+    min-width: calc(33.33% - 38px);
+    max-width: calc(33.33% - 38px);
+    margin: 0 38px 33px 0;
+    text-decoration: none;
+    .image {
+        position: relative;
+        font-size: 0;
+        margin-bottom: 13px;
+        transition: 0.2s;
+    }
+    .labels {
+        position: absolute;
+        top: 9px;
+        left: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 1;
+        .label {
+            margin: 0 8px 8px 0;
+            font-size: 12px;
+            line-height: 1;
+            color: #fff;
+            background: #32bb69;
+            width: 80px;
+            padding: 6px 1px 5px;
+            text-align: center;
+            &.label-sale {
+                background: #fc9f48;
+            }
+            &.label-order {
+                background: #37283c;
+            }
+        }
+    }
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .material {
+        font-size: 16px;
+        color: $color1;
+    }
+    .price {
+        color: #fc9f48;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .title {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+    &:hover {
+        .image {
+            filter: blur(4px);
+        }
+        .title {
+            text-decoration: underline;
+        }
+        .arrow-link {
+            color: #fc9f48;
+            &:before {
+                background: none;
+                border-color: #d4d4d4;
+            }
+            &:after {
+                background-image: url("data:image/svg+xml,%3Csvg width='25' height='8' viewBox='0 0 25 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24.3536 4.35356C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464468C20.9763 0.269206 20.6597 0.269206 20.4645 0.464468C20.2692 0.65973 20.2692 0.976313 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53554C20.6597 7.7308 20.9763 7.7308 21.1716 7.53554L24.3536 4.35356ZM-4.37114e-08 4.5L24 4.5L24 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z' fill='%237D7D7D'/%3E%3C/svg%3E%0A");
+                left: 26px;
+            }
+        }
+    }
+}

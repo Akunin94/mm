@@ -1,0 +1,101 @@
+@charset 'utf-8';
+
+.viewed {
+    margin-bottom: 70px;
+    &__title {
+        padding: 0 0 33px;
+        font-size: 30px;
+        line-height: 32px;
+        font-weight: 300;
+    }
+    .slick-arrow {
+        position: absolute;
+        right: 0;
+        top: -70px;
+        width: 41px;
+        height: 41px;
+        font-size: 0;
+        border: none;
+        padding: 0;
+        outline: none;
+        z-index: 1;
+        cursor: pointer;
+        transition: 0.2s;
+        background: url("data:image/svg+xml,%3Csvg width='41' height='42' viewBox='0 0 41 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.0834 8.67426L28.9788 20.5697L17.0834 32.4651' stroke='%2314142B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+            50% 50% no-repeat;
+        &.slick-prev {
+            margin-right: 53px;
+            transform: rotate(180deg);
+        }
+        &:hover {
+            background-image: url("data:image/svg+xml,%3Csvg width='41' height='42' viewBox='0 0 41 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.0834 8.67426L28.9788 20.5697L17.0834 32.4651' stroke='%23A0A3BD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+    }
+    &__item {
+        .item {
+            border-top: 1px solid #eaeaea;
+            padding: 8px 8px 8px 13px;
+            display: flex;
+            transition: 0.2s;
+            align-items: center;
+            .image {
+                font-size: 0;
+                margin-right: 18px;
+            }
+            .title {
+                font-size: 16px;
+                font-weight: 700;
+            }
+            .left {
+                min-width: 330px;
+                max-width: 330px;
+                margin-right: auto;
+                display: flex;
+                align-items: center;
+            }
+            .amount {
+                min-width: 100px;
+                max-width: 100px;
+                font-size: 16px;
+            }
+            .square {
+                min-width: 110px;
+                max-width: 110px;
+                font-size: 16px;
+                margin-left: 36px;
+            }
+            .square2 {
+                min-width: 110px;
+                max-width: 110px;
+                font-size: 16px;
+                margin-left: 39px;
+            }
+            .price {
+                min-width: 104px;
+                max-width: 104px;
+                font-size: 16px;
+                margin-left: 32px;
+            }
+            .link {
+                font-size: 16px;
+                line-height: 1;
+                color: #fff;
+                border: 1px solid #37283c;
+                background: #37283c;
+                padding: 13px 5px;
+                min-width: 140px;
+                margin-left: 38px;
+                text-align: center;
+                text-decoration: none;
+                transition: 0.2s;
+                &:hover {
+                    background: none;
+                    color: $color1;
+                }
+            }
+            &:hover {
+                background: #eaeaea;
+            }
+        }
+    }
+}

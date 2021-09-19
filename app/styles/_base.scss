@@ -33,9 +33,9 @@ body {
     position: relative;
     overflow-x: hidden;
     margin: 0;
-    a {
-        color: $color1;
-    }
+}
+a {
+    color: $color1;
 }
 img {
     max-width: 100%;
@@ -87,6 +87,59 @@ img {
         &:after {
             background-image: url("data:image/svg+xml,%3Csvg width='25' height='8' viewBox='0 0 25 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24.3536 4.35356C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464468C20.9763 0.269206 20.6597 0.269206 20.4645 0.464468C20.2692 0.65973 20.2692 0.976313 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53554C20.6597 7.7308 20.9763 7.7308 21.1716 7.53554L24.3536 4.35356ZM-4.37114e-08 4.5L24 4.5L24 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z' fill='%237D7D7D'/%3E%3C/svg%3E%0A");
             left: 26px;
+        }
+    }
+}
+.select-wrap {
+    display: flex;
+    align-items: center;
+    .title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #37283c;
+        margin-right: 11px;
+    }
+    .jq-selectbox .jq-selectbox__select {
+        border-radius: 0;
+        border-color: #d3d2d2 !important;
+        background: none !important;
+        padding-right: 30px;
+    }
+    .jq-selectbox .jq-selectbox__select .jq-selectbox__select-text {
+        font-size: 14px;
+        color: #5c5c5c;
+    }
+    .jq-selectbox .jq-selectbox__trigger {
+        border: none;
+        z-index: 5;
+    }
+    .jq-selectbox .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
+        position: absolute;
+        top: 50%;
+        margin-top: -4px;
+        right: 9px;
+        border: none !important;
+        width: 13px;
+        height: 7px;
+        background: url("data:image/svg+xml,%3Csvg width='13' height='7' viewBox='0 0 13 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.5 7L0.870835 0.25L12.1292 0.250001L6.5 7Z' fill='%23A0A3BD'/%3E%3C/svg%3E%0A")
+            0 0 no-repeat;
+    }
+    .jq-selectbox.opened .jq-selectbox__dropdown {
+        top: 0 !important;
+        bottom: auto !important;
+        margin: 0;
+        border-radius: 0;
+        border-color: transparent;
+        box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.2);
+        li {
+            border-radius: 0;
+            font-size: 14px;
+            &:hover,
+            &.sel,
+            &.selected {
+                background: none;
+                color: #fc9f48;
+            }
         }
     }
 }
