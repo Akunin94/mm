@@ -29,6 +29,14 @@
             }
         }
     }
+    &__products {
+        padding-bottom: 43px;
+    }
+    &__product {
+    }
+    .product-wrap {
+        padding-bottom: 24px;
+    }
     .main-product {
         padding: 13px 38px 13px 12px;
         background: $color1;
@@ -64,6 +72,180 @@
             font-size: 18px;
             line-height: 22px;
             font-weight: 600;
+        }
+    }
+    .group {
+        margin-bottom: 8px;
+        .main {
+            display: flex;
+            padding: 20px 60px 20px 24px;
+            background: #eaeaea;
+            align-items: flex-start;
+            position: relative;
+            cursor: pointer;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 16px;
+                height: 26px;
+                top: 50%;
+                margin-top: -13px;
+                right: 34px;
+                background: url("data:image/svg+xml,%3Csvg width='16' height='25' viewBox='0 0 16 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.70711 0.292893C8.31658 -0.0976314 7.68342 -0.0976315 7.2929 0.292892L0.928934 6.65685C0.53841 7.04738 0.53841 7.68054 0.928934 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65686L8.70711 0.292893ZM9 25L9 1L7 1L7 25L9 25Z' fill='%2337283C'/%3E%3C/svg%3E%0A")
+                    50% 50% no-repeat;
+                transform: rotate(180deg);
+                transition: 0.2s;
+            }
+            &:hover {
+                &:before {
+                    background-image: url("data:image/svg+xml,%3Csvg width='16' height='25' viewBox='0 0 16 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.70711 0.292893C8.31658 -0.0976314 7.68342 -0.0976315 7.2929 0.292892L0.928934 6.65685C0.53841 7.04738 0.53841 7.68054 0.928934 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65686L8.70711 0.292893ZM9 25L9 1L7 1L7 25L9 25Z' fill='%237C7C7C'/%3E%3C/svg%3E%0A");
+                }
+            }
+            &.active:before {
+                transform: none;
+            }
+            .name {
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 700;
+                min-width: 91px;
+                max-width: 91px;
+                margin-right: 10px;
+            }
+            .size {
+                min-width: 167px;
+                max-width: 167px;
+                margin-right: 30px;
+                font-size: 16px;
+                line-height: 19px;
+                color: #7c7c7c;
+            }
+            .treatment {
+                font-size: 16px;
+                line-height: 19px;
+                color: #7c7c7c;
+                min-width: 121px;
+                max-width: 121px;
+                margin-right: 38px;
+            }
+            .amount {
+                font-size: 16px;
+                line-height: 19px;
+                min-width: 100px;
+                max-width: 100px;
+                margin-right: 58px;
+                .title {
+                    color: #7c7c7c;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+        .items {
+            display: none;
+            border: 1px solid #d4d4d4;
+            border-top: none;
+            padding: 1px 15px;
+            margin-bottom: 8px;
+        }
+        .items-wrap {
+            max-height: 409px;
+            overflow: auto;
+            margin: 17px 0;
+            padding-right: 18px;
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+            &::-webkit-scrollbar-track {
+                background: #c4c4c4;
+                border-radius: 4px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #37283c;
+            }
+        }
+        .item {
+            display: flex;
+            padding: 17px 0;
+            align-items: center;
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+                padding-bottom: 0;
+            }
+            & + .item {
+                border-top: 1px solid #eaeaea;
+            }
+            .image {
+                min-width: 76px;
+                max-width: 76px;
+                margin-right: 33px;
+            }
+            .size {
+                min-width: 167px;
+                max-width: 167px;
+                margin-right: 30px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+            .treatment {
+                font-size: 16px;
+                line-height: 19px;
+                min-width: 121px;
+                max-width: 121px;
+                margin-right: 38px;
+            }
+            .amount {
+                font-size: 16px;
+                line-height: 19px;
+                min-width: 100px;
+                max-width: 100px;
+                margin-right: 58px;
+                .title {
+                    margin-bottom: 7px;
+                }
+                &.amount3 {
+                    margin-right: auto;
+                }
+            }
+            .price {
+                font-size: 18px;
+                line-height: 22px;
+                text-align: right;
+                font-weight: 600;
+                color: #fc9f48;
+                .old {
+                    font-size: 14px;
+                    font-weight: normal;
+                    line-height: 17px;
+                    margin-bottom: 8px;
+                    color: #000;
+                    text-decoration: line-through;
+                }
+            }
+            .compare {
+                border: 1px solid #a0a3bd;
+                background: #a0a3bd;
+                cursor: pointer;
+                min-width: 46px;
+                min-height: 46px;
+                margin-left: 67px;
+                display: flex;
+                transition: 0.2s;
+                svg {
+                    margin: auto;
+                    stroke: #fff;
+                }
+                &:hover {
+                    background: none;
+                    svg {
+                        stroke: #a0a3bd;
+                    }
+                }
+            }
+            .buy-button {
+                margin-left: 8px;
+            }
         }
     }
 }

@@ -4,25 +4,46 @@ import noUiSlider from 'nouislider'
 import 'jquery.formstyler-modern'
 
 $(function(){
+	// MAIN PAGE SLIDER START
 	if ($('.main__slider--js').length) {
 		$('.main__slider--js').slick({
 			rows: false,
 			autoplay: true
 		})
 	}
+	// MAIN PAGE SLIDER END
+
+	// VIEWED BLOCK SLIDER START
 	if ($('.viewed__slider').length) {
 		$('.viewed__slider').slick({
 			rows: false,
 			autoplay: false
 		})
 	}
+	// VIEWED BLOCK SLIDER END
 
+	// SIMILAR PRODUCTS SLIDER START
+	if ($('.similar-products__slider').length) {
+		$('.similar-products__slider').slick({
+			slidesToShow: 4,
+			slideToScroll: 1,
+			rows: false,
+			centerPadding: '40px',
+			autoplay: false
+		})
+	}
+	// SIMILAR PRODUCTS SLIDER END
+
+	// FORMSTYLER START
 	if ( $('.select-wrap select').length ) {
 		$('.select-wrap select').styler({
 			locale: 'ru'
 		})
 	}
+	// FORMSTYLER END
 	
+
+	// FILTER SLIDER START
 	$('.filter-slider').each(function(){
 		let $this = $(this),
 			slider = $this.get(0),
@@ -47,8 +68,10 @@ $(function(){
 			inputMax.val(+values[1])
 		})
 	});
+	// FILTER SLIDER END
 });
 
+// FILTER START
 $(document).on('click', '.category__filters .title', function(){
 	$(this).toggleClass('active');
 	$(this).next().slideToggle();
@@ -68,3 +91,11 @@ $(document).on('click', '.langs > span:not(.active)', function(){
 	$(this).parent().next().find('.langs-body--item').removeClass('active');
 	$(this).parent().next().find('.langs-body--item').eq(ind).addClass('active');
 });
+// FILTER END
+
+// ACCORDION BLOCK START
+$(document).on('click', '.category1__product .group .main', function(){
+	$(this).toggleClass('active');
+	$(this).next().slideToggle();
+});
+// ACCORDION BLOCK END
