@@ -11,30 +11,6 @@
         margin-bottom: 13px;
         transition: 0.2s;
     }
-    .labels {
-        position: absolute;
-        top: 9px;
-        left: 8px;
-        display: flex;
-        flex-wrap: wrap;
-        z-index: 1;
-        .label {
-            margin: 0 8px 8px 0;
-            font-size: 12px;
-            line-height: 1;
-            color: #fff;
-            background: #32bb69;
-            width: 80px;
-            padding: 6px 1px 5px;
-            text-align: center;
-            &.label-sale {
-                background: #fc9f48;
-            }
-            &.label-order {
-                background: #37283c;
-            }
-        }
-    }
     .top {
         display: flex;
         justify-content: space-between;

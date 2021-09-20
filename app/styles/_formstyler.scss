@@ -1812,4 +1812,5 @@ input[type='range'].styler::-ms-thumb {
 .jq-selectbox {
     max-width: 100%;
     min-width: 168px;
+    z-index: 2;
 }

@@ -99,3 +99,29 @@ $(document).on('click', '.category1__product .group .main', function(){
 	$(this).next().slideToggle();
 });
 // ACCORDION BLOCK END
+
+
+// PRODUCT PAGE POPUP START
+$(document).on('keydown', function (event) {
+    if (event.which == 27) {
+        hideProductPopup();
+    }
+});
+// $(document).click( function(event){
+// 	if( $(event.target).closest('.product_popup-wrap').length || $(event.target).closest('.category1 .group .item .image').length || $(event.target).closest('.category1 .group .item .size').length ) 
+// 	return;
+// 	hideProductPopup();
+// 	event.stopPropagation();
+// });
+$(document).on('click', '.product_popup-close' , hideProductPopup);
+$(document).on('click', '.category1 .group .item .image, .category1 .group .item .size' , showProductPopup);
+
+function showProductPopup(){
+	$('.popup1').addClass('active');
+	$('html').addClass('overflowHidden');
+};
+function hideProductPopup(){
+	$('.product_popup:last').removeClass('active');
+	$('html').removeClass('overflowHidden');
+};
+// PRODUCT PAGE POPUP END
