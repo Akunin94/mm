@@ -943,27 +943,31 @@
 		<div class="product_popup-wrap">
 			<div class="product_popup-body">
 				<div class="product-view">
-					<a href="images/dist/popup_product_pic1.png" class="left">
+					<div class="left" id="popup-gallery">
 						<!--#include virtual="/parts/product_labels.html" -->
-						<img src="images/dist/popup_product_pic1.png" alt="1">
-					</a>
+						<img data-src="images/dist/popup_product_pic1.png" src="images/dist/popup_product_pic1.png" alt="1">
+					</div>
 					<div class="middle">
 						<div class="name">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
 						<div class="options">
 							<div class="options__item bold">
 								<div class="options__title">Партия</div>
+								<div class="options__empty">&nbsp;</div>
 								<div class="options__body">AB</div>
 							</div>
 							<div class="options__item">
 								<div class="options__title">Размер</div>
+								<div class="options__empty">&nbsp;</div>
 								<div class="options__body">2750 х 1850 х 20</div>
 							</div>
 							<div class="options__item">
 								<div class="options__title">Обработка</div>
+								<div class="options__empty">&nbsp;</div>
 								<div class="options__body">Полировка</div>
 							</div>
 							<div class="options__item">
 								<div class="options__title">Страна производства</div>
+								<div class="options__empty">&nbsp;</div>
 								<div class="options__body">Италия</div>
 							</div>
 						</div>
@@ -992,6 +996,79 @@
 						<div class="note">Цвет материала  может отличаться от цвета на мониторе</div>
 					</div>
 				</div>
+			</div>
+			<div class="product_popup-close"></div>
+		</div>
+	</div>
+</div>
+<div class="product_popup popup2">
+	<div class="product_popup-div"></div>
+	<div class="product_popup-scrolling">
+		<div class="product_popup-wrap">
+			<div class="product_popup-body withform">
+				<form class="form">
+					<div class="form__title">Поможем в подборе</div>
+					<div class="form__field">
+						<input type="text" name="name" placeholder="Ваше имя*" required>
+					</div>
+					<div class="form__field">
+						<input type="email" name="email" placeholder="Ваша почта*" required>
+					</div>
+					<div class="form__field">
+						<input type="tel" name="tel" placeholder="Телефон* +7(___)___-__-__" required>
+					</div>
+					<div class="form__field">
+						<textarea placeholder="Комментарий"></textarea>
+					</div>
+					<div class="form__field">
+						<label class="form__checkbox">
+							<input type="checkbox" checked required name="policy">
+							<span>Отправляя форму вы принимаете условия обработки персональных данных</span>
+						</label>
+					</div>
+					<div class="form__field">
+						<button type="submit">Оформить заказ</button>
+					</div>
+					<div class="form__note">обязательные поля для заполнения</div>
+				</form>
+			</div>
+			<div class="product_popup-close"></div>
+		</div>
+	</div>
+</div>
+<div class="product_popup popup3">
+	<div class="product_popup-div"></div>
+	<div class="product_popup-scrolling">
+		<div class="product_popup-wrap">
+			<div class="product_popup-body withform">
+				<form class="form">
+					<div class="form__title">Оформить заказ</div>
+					<div class="form__price">
+						Заказ на сумму: <span><span id="form-price">19 900</span> ₽</span>
+					</div>
+					<div class="form__field">
+						<input type="text" name="name" placeholder="Ваше имя*" required>
+					</div>
+					<div class="form__field">
+						<input type="email" name="email" placeholder="Ваша почта*" required>
+					</div>
+					<div class="form__field">
+						<input type="tel" name="tel" placeholder="Телефон* +7(___)___-__-__" required>
+					</div>
+					<div class="form__field">
+						<textarea placeholder="Комментарий"></textarea>
+					</div>
+					<div class="form__field">
+						<label class="form__checkbox">
+							<input type="checkbox" checked required name="policy">
+							<span>Отправляя форму вы принимаете условия обработки персональных данных</span>
+						</label>
+					</div>
+					<div class="form__field">
+						<button type="submit">Оформить заказ</button>
+					</div>
+					<div class="form__note">обязательные поля для заполнения</div>
+				</form>
 			</div>
 			<div class="product_popup-close"></div>
 		</div>

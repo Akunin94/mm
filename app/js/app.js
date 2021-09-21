@@ -2,8 +2,17 @@ import $ from 'jquery'
 import 'slick-carousel'
 import noUiSlider from 'nouislider'
 import 'jquery.formstyler-modern'
+import lightGallery from 'lightgallery';
 
 $(function(){
+	// POPUP PRODUCT GALLERY START
+	lightGallery(document.getElementById('popup-gallery'), {
+        speed: 500,
+		counter: false,
+		selector: 'img'
+    });
+	// POPUP PRODUCT GALLERY START
+
 	// MAIN PAGE SLIDER START
 	if ($('.main__slider--js').length) {
 		$('.main__slider--js').slick({
@@ -103,25 +112,37 @@ $(document).on('click', '.category1__product .group .main', function(){
 
 // PRODUCT PAGE POPUP START
 $(document).on('keydown', function (event) {
-    if (event.which == 27) {
+    if (event.which == 27 && !$('.lg-container.lg-show').length ) {
         hideProductPopup();
     }
 });
-// $(document).click( function(event){
-// 	if( $(event.target).closest('.product_popup-wrap').length || $(event.target).closest('.category1 .group .item .image').length || $(event.target).closest('.category1 .group .item .size').length ) 
-// 	return;
-// 	hideProductPopup();
-// 	event.stopPropagation();
-// });
 $(document).on('click', '.product_popup-close' , hideProductPopup);
 $(document).on('click', '.category1 .group .item .image, .category1 .group .item .size' , showProductPopup);
+$(document).on('click', '.product-view .button a' , function(){
+	showProductPopup1();
+
+	return false
+});
+$(document).on('click', '.category1 .group .item .buy-button' , function(){
+	showProductPopup2();
+
+	return false
+});
 
 function showProductPopup(){
 	$('.popup1').addClass('active');
 	$('html').addClass('overflowHidden');
 };
+function showProductPopup1(){
+	$('.popup2').addClass('active');
+	$('html').addClass('overflowHidden');
+};
+function showProductPopup2(){
+	$('.popup3').addClass('active');
+	$('html').addClass('overflowHidden');
+};
 function hideProductPopup(){
-	$('.product_popup:last').removeClass('active');
+	$('.product_popup.active:last').removeClass('active');
 	$('html').removeClass('overflowHidden');
 };
-// PRODUCT PAGE POPUP END
+// PRODUCT FORM POPUP END

@@ -1,0 +1,8 @@
+@charset 'utf-8';
+
+.news-list {
+    flex-grow: 1;
+    max-width: $containerWidth;
+    width: 100%;
+    margin: auto;
+}
