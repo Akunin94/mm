@@ -4,8 +4,8 @@
 
 .main {
     flex-grow: 1;
-    position: relative;
     display: flex;
+    position: relative;
     align-items: flex-end;
     &__bg {
         position: absolute;

@@ -1,0 +1,266 @@
+
+<div class="site-wrapper">
+	<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>МармиМакс</title>
+	<meta name="description" content="МармиМакс">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<header class='header inner'>
+		<div class="header__inner">
+			<a href="/" class="header__logo">
+				<img src="images/dist/logo.png" alt="МармиМакс">
+				<div class="header__logo--text">МРАМОР В КАЖДЫЙ ДОМ</div>
+			</a>
+			<div class="header__right">
+				<div class="header__top">
+					<ul class="header__categories">
+						<li>
+							<a href="/category.html">Гранит</a>
+						</li>
+						<li>
+							<a href="/category.html">Известняк</a>
+						</li>
+						<li>
+							<a href="/category.html">Кварцит</a>
+						</li>
+						<li>
+							<a href="/category.html">Мрамор</a>
+						</li>
+						<li>
+							<a href="/category.html">Травертин</a>
+						</li>
+					</ul>
+					<form action="/" class="header__search">
+						<input type="text" placeholder="Поиск">
+						<button type="reset">
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.75 3.75L11.7339 11.7339" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M3.75 11.7339L11.7339 3.75002" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+						<button type="submit">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.3043 21.5652C18.7621 21.5652 21.5652 18.7621 21.5652 15.3043C21.5652 11.8465 18.7621 9.04346 15.3043 9.04346C11.8465 9.04346 9.04346 11.8465 9.04346 15.3043C9.04346 18.7621 11.8465 21.5652 15.3043 21.5652Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M22.2608 22.2608L20.1739 20.1738" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+					</form>
+					<a href="/" class="header__compare">
+						<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<line x1="1" y1="18" x2="1" y2="8" stroke-width="2"/>
+							<line x1="11" y1="18" x2="11" y2="6" stroke-width="2"/>
+							<line x1="6" y1="18" x2="6" y2="4.37114e-08" stroke-width="2"/>
+							<line x1="16" y1="18" x2="16" y2="12" stroke-width="2"/>
+						</svg>
+						<div class="text">12</div>
+					</a>
+				</div>
+				<div class="header__bottom">
+					<ul class="header__menu">
+						<li>
+							<a href="/">Новости</a>
+						</li>
+						<li>
+							<a href="/">Контакты</a>
+						</li>
+						<li>
+							<a href="/">Дизайнерам и архитекторам</a>
+						</li>
+					</ul>
+					<div class="header__schedule">C 9-18, сб и вс вых.</div>
+					<div class="header__phones">
+						<a href="tel:74959663131">+7 (495) 966-31-31</a>,
+						<a href="tel:79264489382">+7 (926) 448-93-82</a>
+					</div>
+					<div class="header__email">
+						<a href="mailto:info@marmimax.ru">info@marmimax.ru</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="contacts-page">
+		<div class="contacts-page__inner">
+			<div class="breadcrumbs">
+    <a href="/" class="breadcrumbs__item">Главная</a>
+    <a href="/" class="breadcrumbs__item">Каталог</a>
+    <a href="/" class="breadcrumbs__item">Бьянко Каррара Джоя / Bianco Carrara Gioia</a>
+</div>
+			<h1>Контакты</h1>
+		</div>
+		<div class="contacts-page__map">
+			<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script>
+			<script>
+				ymaps.ready(function () {
+					var myMap = new ymaps.Map('map', {
+							center: [55.754476, 37.620662],
+							zoom: 9,
+							controls: ['zoomControl']
+						}),
+				
+						MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+							'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+						),
+				
+						myPlacemarkWithContent = new ymaps.Placemark(myMap.getCenter(), {
+							hintContent: 'Собственный значок метки с контентом',
+							balloonContent: 'А эта — новогодняя'
+						});
+		
+					// myMap.behaviors.disable('drag');
+					// myMap.behaviors.disable('scroll');
+				
+					myMap.geoObjects
+						.add(myPlacemarkWithContent);
+				});
+			</script>
+			<div id="map"></div>
+			<div class="contacts-page__contacts">
+				<div class="contacts-page__item">
+					<div class="contacts-page__icon">
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)">
+							<path d="M8.01312 9.98714C6.3923 8.36632 6.02632 6.7455 5.94376 6.09612C5.92069 5.91656 5.98248 5.7365 6.11094 5.60894L7.42258 4.29788C7.61553 4.10505 7.64977 3.80454 7.50515 3.57325L5.41676 0.33044C5.25676 0.0743321 4.92824 -0.0180999 4.65817 0.117005L1.30557 1.69596C1.08717 1.8035 0.958716 2.03554 0.983512 2.27771C1.15918 3.94654 1.88673 8.04895 5.91829 12.0808C9.94984 16.1126 14.0517 16.8399 15.7214 17.0156C15.9635 17.0404 16.1956 16.9119 16.3031 16.6935L17.8821 13.3409C18.0167 13.0714 17.9249 12.7438 17.6698 12.5835L14.427 10.4957C14.1958 10.3509 13.8954 10.3849 13.7024 10.5777L12.3913 11.8893C12.2638 12.0178 12.0837 12.0796 11.9041 12.0565C11.2548 11.9739 9.63393 11.608 8.01312 9.98714Z" fill="white"/>
+							<path d="M14.4495 9.1138C14.1261 9.1138 13.8639 8.85163 13.8639 8.52824C13.8612 6.10392 11.8966 4.13931 9.47228 4.13657C9.14888 4.13657 8.88672 3.8744 8.88672 3.55101C8.88672 3.22762 9.14888 2.96545 9.47228 2.96545C12.5431 2.96884 15.0317 5.4574 15.0351 8.52824C15.0351 8.85163 14.7729 9.1138 14.4495 9.1138Z" fill="white"/>
+							<path d="M17.3773 9.11384C17.0539 9.11384 16.7917 8.85168 16.7917 8.52829C16.7872 4.48774 13.5128 1.21335 9.47228 1.20883C9.14888 1.20883 8.88672 0.94667 8.88672 0.623276C8.88672 0.299882 9.14888 0.0377197 9.47228 0.0377197C14.1593 0.0428831 17.9577 3.84122 17.9628 8.52829C17.9628 8.68359 17.9011 8.83252 17.7913 8.94234C17.6815 9.05215 17.5326 9.11384 17.3773 9.11384Z" fill="white"/>
+							</g>
+							<defs>
+							<clipPath id="clip0">
+							<rect width="16.9811" height="16.9811" fill="white" transform="translate(0.981445 0.0377197)"/>
+							</clipPath>
+							</defs>
+						</svg>
+					</div>
+					<div class="contacts-page__body">
+						<a href="tel:74959663131">+7 (495) 966-31-31</a><a href="tel:79264489382">, +7 (926) 448-93-82</a>
+					</div>
+				</div>
+				<div class="contacts-page__item">
+					<div class="contacts-page__icon">
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)">
+							<path d="M6.55805 9.93049C6.55805 9.70501 6.37516 9.52234 6.14949 9.52234H4.72377C4.49836 9.52234 4.31543 9.70501 4.31543 9.93049V11.356C4.31543 11.5818 4.49836 11.7646 4.72377 11.7646H6.14949C6.37516 11.7646 6.55805 11.5818 6.55805 11.356V9.93049Z" fill="white"/>
+							<path d="M10.1213 9.93049C10.1213 9.70501 9.93839 9.52234 9.71316 9.52234H8.28725C8.06184 9.52234 7.87891 9.70501 7.87891 9.93049V11.356C7.87891 11.5818 8.06184 11.7646 8.28725 11.7646H9.71316C9.93839 11.7646 10.1213 11.5818 10.1213 11.356V9.93049Z" fill="white"/>
+							<path d="M13.684 9.93049C13.684 9.70501 13.5011 9.52234 13.2757 9.52234H11.85C11.6243 9.52234 11.4414 9.70501 11.4414 9.93049V11.356C11.4414 11.5818 11.6243 11.7646 11.85 11.7646H13.2757C13.5011 11.7646 13.684 11.5818 13.684 11.356V9.93049Z" fill="white"/>
+							<path d="M6.55805 13.4939C6.55805 13.2681 6.37516 13.0856 6.14949 13.0856H4.72377C4.49836 13.0856 4.31543 13.2681 4.31543 13.4939V14.9192C4.31543 15.1449 4.49836 15.3276 4.72377 15.3276H6.14949C6.37516 15.3276 6.55805 15.1448 6.55805 14.9192V13.4939Z" fill="white"/>
+							<path d="M10.1213 13.4939C10.1213 13.2681 9.93839 13.0856 9.71316 13.0856H8.28725C8.06184 13.0856 7.87891 13.2681 7.87891 13.4939V14.9192C7.87891 15.1449 8.06184 15.3276 8.28725 15.3276H9.71316C9.93839 15.3276 10.1213 15.1448 10.1213 14.9192V13.4939Z" fill="white"/>
+							<path d="M13.684 13.4939C13.684 13.2681 13.5011 13.0856 13.2759 13.0856H11.85C11.6243 13.0856 11.4414 13.2681 11.4414 13.4939V14.9192C11.4414 15.1449 11.6243 15.3276 11.85 15.3276H13.2759C13.5011 15.3276 13.684 15.1448 13.684 14.9192V13.4939Z" fill="white"/>
+							<path d="M16.2335 2.00428V4.18167C16.2335 5.16583 15.4351 5.95891 14.4511 5.95891H13.3267C12.3426 5.95891 11.5337 5.16583 11.5337 4.18167V1.99646H6.46573V4.18167C6.46573 5.16583 5.65679 5.95891 4.67285 5.95891H3.54824C2.56426 5.95891 1.76591 5.16583 1.76591 4.18167V2.00428C0.905904 2.0302 0.199219 2.74183 0.199219 3.61651V16.3771C0.199219 17.2682 0.921502 18.0001 1.81263 18.0001H16.1868C17.0766 18.0001 17.8002 17.2667 17.8002 16.3771V3.61651C17.8002 2.74183 17.0935 2.0302 16.2335 2.00428ZM15.7113 15.5825C15.7113 15.9676 15.399 16.28 15.0138 16.28H2.95491C2.56965 16.28 2.2574 15.9676 2.2574 15.5825V8.99115C2.2574 8.6059 2.56961 8.29347 2.95491 8.29347H15.0137C15.399 8.29347 15.7112 8.6059 15.7112 8.99115L15.7113 15.5825Z" fill="white"/>
+							<path d="M3.54489 4.79156H4.65707C4.99465 4.79156 5.26837 4.51825 5.26837 4.18067V0.611109C5.26837 0.273493 4.99465 0 4.65707 0H3.54489C3.20727 0 2.93359 0.273493 2.93359 0.611109V4.18067C2.93359 4.51825 3.20727 4.79156 3.54489 4.79156Z" fill="white"/>
+							<path d="M13.3124 4.79156H14.4246C14.762 4.79156 15.0357 4.51825 15.0357 4.18067V0.611109C15.0357 0.273493 14.762 0 14.4246 0H13.3124C12.9749 0 12.7012 0.273493 12.7012 0.611109V4.18067C12.7012 4.51825 12.9749 4.79156 13.3124 4.79156Z" fill="white"/>
+							</g>
+							<defs>
+							<clipPath id="clip0">
+							<rect width="18" height="18" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg>
+					</div>
+					<div class="contacts-page__body">7 дней в неделю</div>
+				</div>
+				<div class="contacts-page__item">
+					<div class="contacts-page__icon">
+						<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)">
+							<path d="M21.8059 4.37085L15.1338 11L21.8059 17.6292C21.9265 17.3771 21.9997 17.0984 21.9997 16.8008V5.19924C21.9997 4.9016 21.9265 4.62295 21.8059 4.37085Z" fill="white"/>
+							<path d="M20.0667 3.26562H1.93386C1.63622 3.26562 1.35757 3.3388 1.10547 3.45941L9.63318 11.9442C10.3872 12.6982 11.6133 12.6982 12.3674 11.9442L20.8951 3.45941C20.643 3.3388 20.3643 3.26562 20.0667 3.26562Z" fill="white"/>
+							<path d="M0.193789 4.37085C0.0731758 4.62295 0 4.9016 0 5.19924V16.8008C0 17.0985 0.0731758 17.3771 0.193789 17.6292L6.86593 11L0.193789 4.37085Z" fill="white"/>
+							<path d="M14.2229 11.9115L13.2788 12.8557C12.0224 14.112 9.97809 14.112 8.72172 12.8557L7.77761 11.9115L1.10547 18.5407C1.35757 18.6613 1.63622 18.7345 1.93386 18.7345H20.0667C20.3643 18.7345 20.643 18.6613 20.8951 18.5407L14.2229 11.9115Z" fill="white"/>
+							</g>
+							<defs>
+							<clipPath id="clip0">
+							<rect width="22" height="22" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg>
+					</div>
+					<div class="contacts-page__body">
+						<a href="mailto: info@marmimax.ru">info@marmimax.ru</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<footer class="footer">
+		<div class="footer__container">
+			<a href="/" class="footer__logo">
+				<img src="images/dist/logo.png" alt="МармиМакс">
+				<div class="footer__logo--text">МРАМОР В КАЖДЫЙ ДОМ</div>
+			</a>
+			<ul class="footer__menu">
+				<li>
+					<a href="/">ДИЗАЙНЕРАМ И АРХИТЕКТОРАМ</a>
+				</li>
+				<li>
+					<a href="/">О НАС</a>
+				</li>
+				<li>
+					<a href="/">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+				</li>
+				<li>
+					<a href="/">КОНТАКТЫ</a>
+				</li>
+				<li>
+					<a href="/">Акции и новости</a>
+				</li>
+			</ul>
+			<div class="footer__contacts">
+				<div class="footer__contacts--address">Москва, Рязанский пр-кт 8а стр.34</div>
+				<div class="footer__contacts--address"> Московская обл. Одинцовский р-н, село Ершово Производственный квартал, строение 5</div>
+				<div class="footer__contacts--social">
+					<a href="/" target="_blank" rel="noopener">
+						<img src="images/dist/soc1.svg" alt="fb">
+					</a>
+					<a href="/" target="_blank" rel="noopener">
+						<img src="images/dist/soc2.svg" alt="instagram">
+					</a>
+					<a href="/" target="_blank" rel="noopener">
+						<img src="images/dist/soc3.svg" alt="youtube">
+					</a>
+					<a href="/" target="_blank" rel="noopener">
+						<img src="images/dist/soc4.svg" alt="tw">
+					</a>
+					<a href="/" target="_blank" rel="noopener">
+						<img src="images/dist/soc5.svg" alt="ok">
+					</a>
+					<a href="/" target="_blank" rel="noopener">
+						<img src="images/dist/soc6.svg" alt="tg">
+					</a>
+					<a href="/" target="_blank" rel="noopener">
+						<img src="images/dist/soc7.svg" alt="vk">
+					</a>
+				</div>
+			</div>
+			<div class="footer__info">
+				<div class="footer__info--phones">
+					<a href="tel:74959663131">+7 (495) 966-31-31</a>
+					,
+					<a href="tel:79264489382">+7 (495) 966-31-31</a>
+				</div>
+				<div class="footer__info--email">
+					<a href="mailto:info@marmimax.ru">info@marmimax.ru</a>
+				</div>
+				<div class="footer__info--copyright">МармиМакс - мрамор в каждый дом © 2021</div>
+				<div class="footer__info--copyright1">
+					<a href="https://www.webreforma.ru/" target="_blank" rel="noopener">Разработка - Digital-агентство WebReforma.ru</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/app.min.js"></script>
+</body>
+</html>
+</div>
