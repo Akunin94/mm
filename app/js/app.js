@@ -160,4 +160,25 @@ function hideProductPopup(){
 	$('.product_popup.active:last').removeClass('active');
 	$('html').removeClass('overflowHidden');
 };
-// PRODUCT FORM POPUP END
+// PRODUCT PAGE POPUP END
+
+
+// SEARCH PAGE START
+$(document).on('change paste keyup', '.search-page__search input', function(){
+	let $this = $(this),
+		$form = $this.closest('form'),
+		text = $this.val();
+	
+	if (text) {
+		$form.addClass('active');
+	} else {
+		$form.removeClass('active');
+	}
+});
+$(document).on('click', '.search-page__search button:reset', function(){
+	let $this = $(this),
+		$form = $this.closest('form');
+		
+	$form.removeClass('active');
+});
+// SEARCH PAGE END

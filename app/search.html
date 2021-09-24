@@ -1,0 +1,39 @@
+<!--#set var="headerClass" value="header inner" -->
+<div class="site-wrapper">
+	<!--#include virtual="/parts/header.html" -->
+	<main class="search-page">
+		<!--#include virtual="/parts/breadcrumbs.html" -->
+		<h1>Результат поиска</h1>
+		<div class="search-page__filter">
+			<form action="/" class="search-page__search">
+				<input type="text" placeholder="Текст поиска" required>
+				<button type="reset">Сбросить</button>
+				<button type="submit">Найти</button>
+			</form>
+			<div class="select-wrap">
+				<div class="title">Сортировать:</div>
+				<div class="body">
+					<select>
+						<option value="Новизна">Новизна</option>
+						<option value="Цена">Цена</option>
+						<option value="Производитель">Производитель</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="search-page__products">
+			<!--#include virtual="/parts/product.html" -->
+			<!--#include virtual="/parts/product.html" -->
+			<!--#include virtual="/parts/product.html" -->
+			<!--#include virtual="/parts/product.html" -->
+			<!--#include virtual="/parts/product.html" -->
+			<!--#include virtual="/parts/product.html" -->
+			<!--#include virtual="/parts/product.html" -->
+			<!--#include virtual="/parts/product.html" -->
+		</div>	
+		<!--#include virtual="/parts/pagination.html" -->	
+		<br>
+		<!--#include virtual="/parts/viewed_products.html" -->	
+	</main>
+	<!--#include virtual="/parts/footer.html" -->
+</div>
