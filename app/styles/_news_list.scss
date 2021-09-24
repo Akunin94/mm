@@ -108,3 +108,94 @@
         }
     }
 }
+
+.single-news {
+    padding-bottom: 79px;
+    p {
+        margin: 2em 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__date {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        color: #a0a3bd;
+        & + p {
+            margin-top: 0;
+        }
+    }
+    ul,
+    ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            position: relative;
+            margin-bottom: 17px;
+            font-size: 16px;
+            line-height: 24px;
+            padding-left: 43px;
+            &:before {
+                position: absolute;
+                left: 0;
+                top: -2px;
+                content: '';
+                background: url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='14.1426' y='1.41421' width='18' height='18' transform='rotate(45 14.1426 1.41421)' stroke='%23A0A3BD' stroke-width='2'/%3E%3Crect x='14.1426' y='7.07104' width='10' height='10' transform='rotate(45 14.1426 7.07104)' fill='%23A0A3BD'/%3E%3C/svg%3E%0A")
+                    0 0 no-repeat;
+                width: 29px;
+                height: 29px;
+            }
+        }
+    }
+    ol {
+        li {
+            counter-increment: numbs;
+            &:before {
+                content: counters(numbs, '.', decimal-leading-zero);
+                background: none;
+                font-size: 24px;
+                line-height: 1;
+                color: #a0a3bd;
+                font-weight: 700;
+                top: 0;
+            }
+        }
+    }
+    .flexblock {
+        display: flex;
+        margin-bottom: 70px;
+        width: 100%;
+        *:first-child[src] {
+            margin: 0 30px 10px 0;
+        }
+        *:last-child[src] {
+            margin: 0 0 10px 30px;
+        }
+    }
+}
+.edit-block {
+    margin: 70px 0 74px 80px;
+    position: relative;
+    background: $color1;
+    padding: 33px 38px 24px 78px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    min-height: 125px;
+    &:before {
+        position: absolute;
+        content: '';
+        width: 148px;
+        height: 148px;
+        top: 50%;
+        margin-top: -75px;
+        background: url("data:image/svg+xml,%3Csvg width='148' height='148' viewBox='0 0 148 148' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='72.832' width='106' height='103' transform='rotate(45 72.832 0)' fill='white'/%3E%3Crect x='73.832' y='18.4142' width='78' height='78' transform='rotate(45 73.832 18.4142)' fill='white' stroke='%23A0A3BD' stroke-width='2'/%3E%3Cpath d='M90.8927 74.0607C91.4785 73.4749 91.4785 72.5251 90.8927 71.9393L81.3468 62.3934C80.761 61.8076 79.8112 61.8076 79.2254 62.3934C78.6396 62.9792 78.6396 63.9289 79.2254 64.5147L87.7107 73L79.2254 81.4853C78.6396 82.0711 78.6396 83.0208 79.2254 83.6066C79.8112 84.1924 80.761 84.1924 81.3468 83.6066L90.8927 74.0607ZM58.832 74.5H89.832V71.5H58.832V74.5Z' fill='%23A0A3BD'/%3E%3C/svg%3E%0A")
+            0 0 no-repeat;
+        left: -88px;
+    }
+}
