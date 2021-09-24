@@ -1,0 +1,136 @@
+@charset 'utf-8';
+
+.compare-page {
+    flex-grow: 1;
+    max-width: $containerWidth;
+    width: 100%;
+    margin: auto;
+    .h1-wrap {
+        display: flex;
+        align-items: center;
+        margin: 0 0 50px;
+    }
+    h1 {
+        margin: 0 auto 0 0;
+    }
+    &__clear {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 1;
+        padding: 0 0 0 24px;
+        background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M8.04208 7.00096L13.7842 1.25884C14.0719 0.971076 14.0719 0.504538 13.7842 0.2168C13.4964 -0.0709647 13.0299 -0.0709647 12.7421 0.2168L6.99999 5.95892L1.25786 0.2168C0.9701 -0.0709647 0.503562 -0.0709647 0.215824 0.2168C-0.0719139 0.504565 -0.0719413 0.971104 0.215824 1.25884L5.95795 7.00096L0.215824 12.7431C-0.0719413 13.0308 -0.0719413 13.4974 0.215824 13.7851C0.503589 14.0729 0.970127 14.0729 1.25786 13.7851L6.99999 8.043L12.7421 13.7851C13.0298 14.0729 13.4964 14.0729 13.7841 13.7851C14.0719 13.4974 14.0719 13.0308 13.7841 12.7431L8.04208 7.00096Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='14' height='14' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+            0 0 no-repeat;
+        font-weight: 600;
+        transition: 0.2s;
+        color: #14142b;
+        &:hover {
+            color: #7c7c7c;
+            background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M8.04208 7.00096L13.7842 1.25884C14.0719 0.971076 14.0719 0.504538 13.7842 0.2168C13.4964 -0.0709647 13.0299 -0.0709647 12.7421 0.2168L6.99999 5.95892L1.25786 0.2168C0.9701 -0.0709647 0.503562 -0.0709647 0.215824 0.2168C-0.0719139 0.504565 -0.0719413 0.971104 0.215824 1.25884L5.95795 7.00096L0.215824 12.7431C-0.0719413 13.0308 -0.0719413 13.4974 0.215824 13.7851C0.503589 14.0729 0.970127 14.0729 1.25786 13.7851L6.99999 8.043L12.7421 13.7851C13.0298 14.0729 13.4964 14.0729 13.7841 13.7851C14.0719 13.4974 14.0719 13.0308 13.7841 12.7431L8.04208 7.00096Z' fill='%237c7c7c'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='14' height='14' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+        }
+    }
+    &__table {
+        padding-bottom: 60px;
+        display: flex;
+    }
+    &__left {
+        min-width: 270px;
+        max-width: 270px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__right {
+        flex-grow: 1;
+    }
+    &__cell {
+        border-top: 1px solid #c4c4c4;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 19px 20px;
+        &--big,
+        &--price {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        &:not(.compare-page__cell--main) {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    &__slider {
+        display: flex;
+        max-width: 930px;
+    }
+    &__slider--js &__item {
+        min-width: 0;
+        max-width: none;
+    }
+    &__item {
+        min-width: 33.33%;
+        max-width: 33.33%;
+    }
+    &__left &__cell--main {
+        flex-grow: 1;
+    }
+    &__right &__item &__cell {
+        padding-right: 0;
+        padding-left: 38px;
+    }
+    &__right &__item &__cell--main {
+        padding: 0 0 11px 38px;
+        position: relative;
+        border: none;
+    }
+    &__image {
+        font-size: 0;
+        margin-bottom: 12px;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 700;
+        color: $color1;
+        text-decoration: none;
+    }
+    &__remove {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        cursor: pointer;
+        width: 29px;
+        height: 29px;
+        transition: 0.2s;
+        background: #fff
+            url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M8.04208 7.00096L13.7842 1.25884C14.0719 0.971076 14.0719 0.504538 13.7842 0.2168C13.4964 -0.0709647 13.0299 -0.0709647 12.7421 0.2168L6.99999 5.95892L1.25786 0.2168C0.9701 -0.0709647 0.503562 -0.0709647 0.215824 0.2168C-0.0719139 0.504565 -0.0719413 0.971104 0.215824 1.25884L5.95795 7.00096L0.215824 12.7431C-0.0719413 13.0308 -0.0719413 13.4974 0.215824 13.7851C0.503589 14.0729 0.970127 14.0729 1.25786 13.7851L6.99999 8.043L12.7421 13.7851C13.0298 14.0729 13.4964 14.0729 13.7841 13.7851C14.0719 13.4974 14.0719 13.0308 13.7841 12.7431L8.04208 7.00096Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='14' height='14' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+            50% 50% no-repeat;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    .slick-slider &__item {
+        min-width: 0;
+        max-width: none;
+    }
+    .slick-arrow {
+        position: absolute;
+        top: 142px;
+        width: 30px;
+        height: 30px;
+        left: 0;
+        font-size: 0;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline: none;
+        z-index: 1;
+        background: #fff
+            url("data:image/svg+xml,%3Csvg width='15' height='27' viewBox='0 0 15 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5625 1.54163L1.66708 13.437L13.5625 25.3325' stroke='%2314142B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+            50% 50% no-repeat;
+        &.slick-next {
+            left: auto;
+            right: -41px;
+            transform: rotate(180deg);
+        }
+    }
+}

@@ -43,6 +43,21 @@ $(function(){
 	}
 	// SIMILAR PRODUCTS SLIDER END
 
+	// COMPARE SLIDER START
+	if ( $('.compare-page__slider--js').length ) {
+		$('.compare-page__slider--js').slick({
+			slidesToShow: 3,
+			slideToScroll: 1,
+			rows: false,
+			autoplay: false
+		});
+		$(document).on('click', '.compare-page__remove', function(){
+			// delete this product from compare
+			document.location.reload();
+		});
+	}
+	// COMPARE SLIDER END
+
 	// FORMSTYLER START
 	if ( $('.select-wrap select').length ) {
 		$('.select-wrap select').styler({
