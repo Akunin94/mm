@@ -2,6 +2,8 @@
 
 .breadcrumbs {
     margin-bottom: 32px;
+    white-space: nowrap;
+    overflow: auto;
     &__item {
         color: #7c7c7c;
         text-decoration: none;

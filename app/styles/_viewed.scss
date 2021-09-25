@@ -2,11 +2,19 @@
 
 .viewed {
     margin-bottom: 70px;
+    @media all and (max-width: 490px) {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
     &__title {
         padding: 0 0 33px;
         font-size: 30px;
         line-height: 32px;
         font-weight: 300;
+        @media all and (max-width: 490px) {
+            text-align: center;
+            padding-bottom: 20px;
+        }
     }
     .slick-arrow {
         position: absolute;
@@ -30,6 +38,11 @@
         &:hover {
             background-image: url("data:image/svg+xml,%3Csvg width='41' height='42' viewBox='0 0 41 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.0834 8.67426L28.9788 20.5697L17.0834 32.4651' stroke='%23A0A3BD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
         }
+        @media all and (max-width: 490px) {
+            bottom: -50px;
+            right: calc(50% - 41px);
+            top: auto;
+        }
     }
     &__item {
         .item {
@@ -38,13 +51,52 @@
             display: flex;
             transition: 0.2s;
             align-items: center;
+            @media all and (max-width: 1100px) {
+                padding-right: 0;
+                padding-left: 0;
+            }
             .image {
                 font-size: 0;
                 margin-right: 18px;
+                @media all and (max-width: 1000px) {
+                    margin-right: 10px;
+                }
+                @media all and (max-width: 960px) {
+                    margin-right: 8px;
+                    img {
+                        max-width: 86px;
+                    }
+                }
+                @media all and (max-width: 800px) {
+                    img {
+                        max-width: 55px;
+                    }
+                }
+                @media all and (max-width: 490px) {
+                    margin-right: 6px;
+                    img {
+                        max-width: 50px;
+                    }
+                }
+                @media all and (max-width: 350px) {
+                    display: none;
+                }
             }
-            .title {
+            .name {
                 font-size: 16px;
                 font-weight: 700;
+                @media all and (max-width: 960px) {
+                    font-size: 15px;
+                }
+                @media all and (max-width: 800px) {
+                    font-size: 14px;
+                }
+                @media all and (max-width: 490px) {
+                    font-size: 13px;
+                }
+                @media all and (max-width: 350px) {
+                    font-size: 14px;
+                }
             }
             .left {
                 min-width: 330px;
@@ -52,29 +104,128 @@
                 margin-right: auto;
                 display: flex;
                 align-items: center;
+                @media all and (max-width: 1000px) {
+                    min-width: 290px;
+                    max-width: 290px;
+                }
+                @media all and (max-width: 960px) {
+                    min-width: 240px;
+                    max-width: 240px;
+                }
+                @media all and (max-width: 800px) {
+                    min-width: 180px;
+                    max-width: 180px;
+                }
+                @media all and (max-width: 490px) {
+                    min-width: 160px;
+                    max-width: 160px;
+                }
+                @media all and (max-width: 350px) {
+                    min-width: 120px;
+                    max-width: 120px;
+                }
             }
             .amount {
                 min-width: 100px;
                 max-width: 100px;
                 font-size: 16px;
+                @media all and (max-width: 960px) {
+                    min-width: 75px;
+                    max-width: 75px;
+                    font-size: 15px;
+                }
+                @media all and (max-width: 800px) {
+                    font-size: 14px;
+                    min-width: 55px;
+                    max-width: 55px;
+                }
+                @media all and (max-width: 590px) {
+                    display: none;
+                }
             }
             .square {
                 min-width: 110px;
                 max-width: 110px;
                 font-size: 16px;
                 margin-left: 36px;
+                @media all and (max-width: 1100px) {
+                    margin-left: 20px;
+                }
+                @media all and (max-width: 1000px) {
+                    margin-left: 15px;
+                }
+                @media all and (max-width: 960px) {
+                    min-width: 90px;
+                    max-width: 90px;
+                    font-size: 15px;
+                }
+                @media all and (max-width: 800px) {
+                    font-size: 14px;
+                    min-width: 60px;
+                    max-width: 60px;
+                    margin-left: 10px;
+                }
+                @media all and (max-width: 590px) {
+                    display: none;
+                }
             }
             .square2 {
                 min-width: 110px;
                 max-width: 110px;
                 font-size: 16px;
                 margin-left: 39px;
+                @media all and (max-width: 1100px) {
+                    margin-left: 20px;
+                }
+                @media all and (max-width: 1000px) {
+                    margin-left: 15px;
+                }
+                @media all and (max-width: 960px) {
+                    min-width: 90px;
+                    max-width: 90px;
+                    font-size: 15px;
+                }
+                @media all and (max-width: 800px) {
+                    font-size: 14px;
+                    min-width: 60px;
+                    max-width: 60px;
+                    margin-left: 10px;
+                }
+                @media all and (max-width: 590px) {
+                    display: none;
+                }
             }
             .price {
                 min-width: 104px;
                 max-width: 104px;
                 font-size: 16px;
                 margin-left: 32px;
+                @media all and (max-width: 1100px) {
+                    margin-left: 20px;
+                }
+                @media all and (max-width: 1000px) {
+                    margin-left: 15px;
+                }
+                @media all and (max-width: 960px) {
+                    min-width: 90px;
+                    max-width: 90px;
+                    font-size: 15px;
+                }
+                @media all and (max-width: 800px) {
+                    font-size: 14px;
+                    min-width: 75px;
+                    max-width: 75px;
+                    margin-left: 10px;
+                }
+                @media all and (max-width: 590px) {
+                    margin-right: auto;
+                }
+                @media all and (max-width: 490px) {
+                    font-size: 13px;
+                    min-width: 70px;
+                    max-width: 70px;
+                    margin-left: 0;
+                }
             }
             .link {
                 font-size: 16px;
@@ -91,6 +242,31 @@
                 &:hover {
                     background: none;
                     color: $color1;
+                }
+                @media all and (max-width: 1100px) {
+                    margin-left: 20px;
+                }
+                @media all and (max-width: 1000px) {
+                    margin-left: 15px;
+                }
+                @media all and (max-width: 960px) {
+                    min-width: 100px;
+                    max-width: 100px;
+                    font-size: 15px;
+                }
+                @media all and (max-width: 800px) {
+                    font-size: 14px;
+                    min-width: 80px;
+                    max-width: 80px;
+                    padding-left: 2px;
+                    padding-right: 2px;
+                    margin-left: 10px;
+                }
+                @media all and (max-width: 490px) {
+                    font-size: 13px;
+                    min-width: 75px;
+                    max-width: 75px;
+                    margin-left: 0;
                 }
             }
             &:hover {

@@ -115,6 +115,14 @@ $(document).on('click', '.langs > span:not(.active)', function(){
 	$(this).parent().next().find('.langs-body--item').removeClass('active');
 	$(this).parent().next().find('.langs-body--item').eq(ind).addClass('active');
 });
+$(document).on('click', '.open-filter', function(){
+	$('.category__filters').toggleClass('active');
+});
+$(document).on('click', function (event) {
+    if ($(event.target).closest('.category__filters').length || $(event.target).closest('.open-filter').length) return;
+    $('.category__filters').removeClass('active');
+    event.stopPropagation();
+});
 // FILTER END
 
 // ACCORDION BLOCK START
@@ -182,3 +190,17 @@ $(document).on('click', '.search-page__search button:reset', function(){
 	$form.removeClass('active');
 });
 // SEARCH PAGE END
+
+
+// HEADER MOBILE MENU START
+$(document).on('click', '.header__menu-toggle', function(){
+	$(this).toggleClass('active');
+});
+$(function(){
+	let categories = $('.header__categories').html()
+	let menu = $('.header__menu').html()
+	
+	$('.header__menu-mobile').append(categories)
+	$('.header__menu-mobile').append(menu)
+});
+// HEADER MOBILE MENU END

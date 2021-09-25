@@ -5,6 +5,22 @@
     max-width: calc(33.33% - 38px);
     margin: 0 38px 33px 0;
     text-decoration: none;
+    @media all and (max-width: 1024px) {
+        min-width: calc(50% - 38px);
+        max-width: calc(50% - 38px);
+    }
+    @media all and (max-width: 930px) {
+        min-width: calc(33.33% - 38px);
+        max-width: calc(33.33% - 38px);
+    }
+    @media all and (max-width: 740px) {
+        min-width: calc(50% - 38px);
+        max-width: calc(50% - 38px);
+    }
+    @media all and (max-width: 446px) {
+        min-width: calc(100% - 38px);
+        max-width: calc(100% - 38px);
+    }
     .image {
         position: relative;
         font-size: 0;

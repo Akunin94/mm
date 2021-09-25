@@ -71,6 +71,7 @@ img {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    overflow: hidden;
 }
 .arrow-link {
     text-decoration: none;

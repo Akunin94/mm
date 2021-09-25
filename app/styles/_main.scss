@@ -25,6 +25,22 @@
         padding-top: 140px;
         align-items: flex-end;
         justify-content: space-between;
+        @media all and (max-width: 1239px) {
+            margin-left: 20px;
+            margin-right: 20px;
+            width: calc(100vw - 40px);
+        }
+        @media all and (max-width: 940px) {
+            flex-direction: column;
+            padding-top: 120px;
+            align-items: center;
+        }
+        @media all and (max-width: 480px) {
+            display: block;
+            margin-left: 8px;
+            margin-right: 8px;
+            max-width: 100%;
+        }
     }
     &__blocks {
         padding-bottom: 74px;
@@ -39,13 +55,29 @@
                 min-width: 65px;
                 max-width: 65px;
                 margin-right: 20px;
+                @media all and (max-width: 480px) {
+                    margin-right: 10px;
+                }
             }
             .title {
                 color: #fff;
                 font-size: 18px;
                 line-height: 24px;
                 font-weight: 700;
+                @media all and (max-width: 380px) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
             }
+        }
+        @media all and (max-width: 940px) {
+            min-width: 471px;
+            max-width: 471px;
+            padding-bottom: 10px;
+        }
+        @media all and (max-width: 520px) {
+            min-width: 100%;
+            max-width: 100%;
         }
     }
     &__slider {
@@ -80,6 +112,10 @@
             .body {
                 font-size: 16px;
                 line-height: 28px;
+                @media all and (max-width: 380px) {
+                    font-size: 15px;
+                    line-height: 23px;
+                }
             }
             .link {
                 position: absolute;
@@ -106,11 +142,28 @@
                 width: 79px;
                 border-left: 7px solid #fff;
                 transform: rotate(180deg);
+                @media all and (max-width: 380px) {
+                    margin-right: 36px;
+                    width: 43px;
+                    height: 36px;
+                }
             }
             &:hover {
                 background-color: #eaeaea;
                 background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 5L16.9632 11.9632L10 18.9263' stroke='%2314142B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
             }
+            @media all and (max-width: 380px) {
+                width: 36px;
+                height: 36px;
+                bottom: 18px;
+            }
+        }
+        @media all and (max-width: 480px) {
+            min-width: calc(100vw - 16px);
+            max-width: calc(100vw - 16px);
+        }
+        @media all and (max-width: 380px) {
+            padding: 15px 15px 0;
         }
     }
 }
