@@ -9,20 +9,45 @@
     align-items: center;
     padding: 20px 0;
     text-align: center;
+    @media all and (max-width: 1239px) {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+    }
     &__image {
         margin-bottom: 52px;
+        @media all and (max-width: 960px) {
+            margin-bottom: 30px;
+        }
+        @media all and (max-width: 480px) {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
     }
     &__title {
         font-size: 30px;
         line-height: 1.2;
         color: #1d1d1d;
         margin-bottom: 9px;
+        @media all and (max-width: 640px) {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        @media all and (max-width: 420px) {
+            font-size: 19px;
+        }
     }
     &__body {
         font-size: 16px;
-        line-height: 22px;
+        line-height: 1.375;
         color: #6b6b6b;
         margin-bottom: 30px;
+        @media all and (max-width: 380px) {
+            font-size: 15px;
+        }
+        @media all and (max-width: 320px) {
+            font-size: 14px;
+        }
     }
     &__link {
         font-size: 16px;

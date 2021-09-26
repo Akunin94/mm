@@ -23,6 +23,18 @@ h1 {
     margin-bottom: 50px;
     line-height: 0.888;
     line-height: 40px;
+    @media all and (max-width: 960px) {
+        font-size: 30px;
+        line-height: 1.1;
+        margin-bottom: 40px;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    @media all and (max-width: 360px) {
+        font-size: 22px;
+    }
 }
 h2 {
     font-size: 30px;
@@ -33,12 +45,32 @@ h2 {
     & + p {
         margin-top: 20px !important;
     }
+    @media all and (max-width: 960px) {
+        font-size: 26px;
+        line-height: 1.1;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 22px;
+    }
+    @media all and (max-width: 360px) {
+        font-size: 18px;
+    }
 }
 h3 {
     font-size: 24px;
     line-height: 30px;
     color: $color1;
     margin: 0 0 29px;
+    @media all and (max-width: 960px) {
+        font-size: 20px;
+        line-height: 1.1;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 18px;
+    }
+    @media all and (max-width: 360px) {
+        font-size: 16px;
+    }
 }
 h4 {
     font-size: 24px;
@@ -46,6 +78,16 @@ h4 {
     color: #a0a3bd;
     margin: 0 0 29px;
     font-weight: 700;
+    @media all and (max-width: 960px) {
+        font-size: 20px;
+        line-height: 1.1;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 18px;
+    }
+    @media all and (max-width: 360px) {
+        font-size: 16px;
+    }
 }
 body {
     font-family: $userfont;
