@@ -1813,4 +1813,7 @@ input[type='range'].styler::-ms-thumb {
     max-width: 100%;
     min-width: 168px;
     z-index: 2;
+    &.opened {
+        z-index: 3;
+    }
 }

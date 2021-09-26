@@ -38,7 +38,27 @@ $(function(){
 			slideToScroll: 1,
 			rows: false,
 			centerPadding: '40px',
-			autoplay: false
+			autoplay: false,
+			responsive: [
+				{
+					breakpoint: 901,
+					settings: {
+						slidesToShow: 3
+					}
+				},
+				{
+					breakpoint: 701,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 421,
+					settings: {
+						slidesToShow: 1
+					}
+				}
+			]
 		})
 	}
 	// SIMILAR PRODUCTS SLIDER END

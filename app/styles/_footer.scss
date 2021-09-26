@@ -3,6 +3,9 @@
 .footer {
     border-top: 8px solid #fff;
     background: $color1;
+    @media all and (max-width: 480px) {
+        border-top: none;
+    }
     &__container {
         max-width: $containerWidth;
         margin: auto;

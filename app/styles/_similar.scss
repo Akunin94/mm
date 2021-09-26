@@ -2,11 +2,19 @@
 
 .similar-products {
     margin-bottom: 85px;
+    @media all and (max-width: 490px) {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
     &__title {
         padding: 0 0 33px;
         font-size: 30px;
         line-height: 32px;
         font-weight: 300;
+        @media all and (max-width: 490px) {
+            text-align: center;
+            padding-bottom: 20px;
+        }
     }
     .slick-list {
         margin-left: -30px;
@@ -32,6 +40,11 @@
         }
         &:hover {
             background-image: url("data:image/svg+xml,%3Csvg width='41' height='42' viewBox='0 0 41 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.0834 8.67426L28.9788 20.5697L17.0834 32.4651' stroke='%23A0A3BD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+        @media all and (max-width: 490px) {
+            bottom: -50px;
+            right: calc(50% - 41px);
+            top: auto;
         }
     }
     .product {

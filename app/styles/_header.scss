@@ -393,6 +393,9 @@ $block: '.header';
                 }
             }
         }
+        @media all and (max-width: 480px) {
+            right: 8px;
+        }
     }
     &__menu {
         margin: 0 auto 0 0;
