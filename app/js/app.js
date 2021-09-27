@@ -64,16 +64,47 @@ $(function(){
 	// SIMILAR PRODUCTS SLIDER END
 
 	// COMPARE SLIDER START
-	if ( $('.compare-page__slider--js').length ) {
-		$('.compare-page__slider--js').slick({
-			slidesToShow: 3,
-			slideToScroll: 1,
-			rows: false,
-			autoplay: false
-		});
+	if ( $('.compare-page__slider').length ) {
+		compareSliderInit();
+		
 		$(document).on('click', '.compare-page__remove', function(){
 			// delete this product from compare
 			document.location.reload();
+		});
+		$(window).on('resize orientationchange', function(){
+			setTimeout(function(){
+				compareSliderInit();
+			}, 0);
+		});
+	}
+	function compareSliderInit() {
+		$('.compare-page__slider').each(function(){
+			var $this = $(this),
+				sliderItemsLength = $this.find('.compare-page__item:not(.slick-cloned)').length,
+				items = 1;
+			
+			if ( $('body').width() > 960  ) {
+				items = 3;
+			} else if( $('body').width() > 560 && $('body').width() <= 960 ) {
+				items = 2;
+			} else {
+				items = 1;
+			}
+			
+			if ($this.hasClass('slick-slider')) {
+				$this.slick('unslick');
+				$this.removeClass('slick-slider')
+				$this.find('.slick-cloned').remove();
+			}
+			
+			if ( sliderItemsLength > items ) {
+				$this.slick({
+					slidesToShow: items,
+					slideToScroll: 1,
+					rows: false,
+					autoplay: false
+				});
+			}
 		});
 	}
 	// COMPARE SLIDER END

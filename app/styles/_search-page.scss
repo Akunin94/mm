@@ -7,16 +7,29 @@
     max-width: $containerWidth;
     width: 100%;
     margin: auto;
+    @media all and (max-width: 1239px) {
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: none;
+        width: auto;
+    }
     &__filter {
         display: flex;
         align-items: center;
         margin-bottom: 43px;
+        @media all and (max-width: 640px) {
+            flex-direction: column;
+        }
     }
     &__search {
         flex-grow: 1;
         margin: 0;
         position: relative;
         margin-right: 30px;
+        @media all and (max-width: 640px) {
+            margin: 0 0 20px;
+            width: 100%;
+        }
         input[type='text'] {
             width: 100%;
             border: none;
@@ -92,6 +105,18 @@
             margin: 0 30px 33px 0;
             max-width: calc(25% - 30px);
             min-width: calc(25% - 30px);
+            @media all and (max-width: 1024px) {
+                max-width: calc(33.33% - 30px);
+                min-width: calc(33.33% - 30px);
+            }
+            @media all and (max-width: 640px) {
+                max-width: calc(50% - 30px);
+                min-width: calc(50% - 30px);
+            }
+            @media all and (max-width: 440px) {
+                max-width: calc(100% - 30px);
+                min-width: calc(100% - 30px);
+            }
         }
     }
 }
