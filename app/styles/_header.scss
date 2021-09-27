@@ -10,6 +10,7 @@ $block: '.header';
     z-index: 1;
     &.inner {
         position: relative;
+        z-index: 3;
         margin-bottom: 16px;
         #{$block}__logo--text,
         #{$block}__menu > li > a,
@@ -268,6 +269,7 @@ $block: '.header';
         min-width: 63px;
         border-left: 1px solid #544759;
         border-right: 1px solid #544759;
+        cursor: pointer;
         svg {
             margin: auto;
         }

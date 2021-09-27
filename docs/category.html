@@ -1,7 +1,6 @@
 
-<div class="site-wrapper">
-	<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -9,14 +8,13 @@
 	<title>МармиМакс</title>
 	<meta name="description" content="МармиМакс">
 	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<link rel="icon" href="images/favicon.png">
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
 
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
 <body>
+<div class="site-wrapper">
 	<header class='header inner'>
 		<div class="header__inner">
 			<a href="/" class="header__logo">
@@ -44,13 +42,13 @@
 					</ul>
 					<form action="/" class="header__search">
 						<input type="text" placeholder="Поиск">
-						<button type="reset">
+						<button type="reset" title="Сбросить">
 							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M3.75 3.75L11.7339 11.7339" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M3.75 11.7339L11.7339 3.75002" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
 						</button>
-						<button type="submit">
+						<button type="submit" title="Найти">
 							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M15.3043 21.5652C18.7621 21.5652 21.5652 18.7621 21.5652 15.3043C21.5652 11.8465 18.7621 9.04346 15.3043 9.04346C11.8465 9.04346 9.04346 11.8465 9.04346 15.3043C9.04346 18.7621 11.8465 21.5652 15.3043 21.5652Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M22.2608 22.2608L20.1739 20.1738" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -66,7 +64,7 @@
 						</svg>
 						<div class="text">12</div>
 					</a>
-					<a href="/" class="header__cart">
+					<div class="header__cart">
 						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0)">
 							<path d="M21.6614 14.2028V5.94972L5.40298 3.01417V1.99956C5.40298 0.897012 4.50601 0 3.40347 0H1.33838V1.35487H3.40342C3.75889 1.35487 4.04811 1.64409 4.04811 1.99956V14.5097C4.04811 15.954 5.22305 17.1289 6.6673 17.1289H7.20947V18.6729C6.93267 18.5516 6.62728 18.4838 6.30622 18.4838C5.0611 18.4838 4.04811 19.4968 4.04811 20.7419C4.04811 21.987 5.0611 23 6.30622 23C7.47516 23 8.43937 22.1072 8.553 20.9677H8.56434V17.1289H20.3065V18.6729C20.0297 18.5516 19.7243 18.4838 19.4033 18.4838C18.1581 18.4838 17.1452 19.4968 17.1452 20.7419C17.1452 21.987 18.1581 23 19.4033 23C20.5722 23 21.5364 22.1072 21.65 20.9677H21.6614V15.774H6.6673C5.97013 15.774 5.40298 15.2069 5.40298 14.5097V13.977L21.6614 14.2028ZM6.30622 21.6451C5.80818 21.6451 5.40298 21.2399 5.40298 20.7419C5.40298 20.2438 5.80818 19.8386 6.30622 19.8386C6.80427 19.8386 7.20947 20.2438 7.20947 20.7419C7.20947 21.2399 6.80427 21.6451 6.30622 21.6451ZM19.4033 21.6451C18.9052 21.6451 18.5 21.2399 18.5 20.7419C18.5 20.2438 18.9052 19.8386 19.4033 19.8386C19.9013 19.8386 20.3065 20.2438 20.3065 20.7419C20.3065 21.2399 19.9013 21.6451 19.4033 21.6451ZM12.1773 12.7161L9.46758 12.6785V5.12483L12.1773 5.61407V12.7161ZM13.5322 5.85872L16.0161 6.30722V12.7694L13.5322 12.7349V5.85872ZM8.11271 12.6597L5.40298 12.622V4.39094L8.11271 4.88019V12.6597ZM20.3065 12.829L17.371 12.7882V6.55182L20.3065 7.08185V12.829Z" fill="white"/>
@@ -77,7 +75,7 @@
 							</clipPath>
 							</defs>
 						</svg>
-					</a>
+					</div>
 					<div class="header__menu-toggle">&nbsp;</div>
 					<ul class="header__menu-mobile"></ul>
 				</div>
@@ -105,407 +103,407 @@
 			</div>
 		</div>
 	</header>
-	<main class="category">
-		<div class="breadcrumbs">
+<main class="category">
+	<div class="breadcrumbs">
     <a href="/" class="breadcrumbs__item">Главная</a>
     <a href="/" class="breadcrumbs__item">Каталог</a>
     <a href="/" class="breadcrumbs__item">Бьянко Каррара Джоя / Bianco Carrara Gioia</a>
 </div>
-		<h1>Гранит</h1>
-		<div class="category__inner">
-			<div class="category__filters">
-				<div class="category__filters--item">
-					<div class="title">Материал</div>
-					<div class="body">
-						<div class="filter-button">Мрамор</div>
-						<div class="filter-button active">Гранит</div>
-						<div class="filter-button">Известняк</div>
-						<div class="filter-button">Кварцит</div>
-					</div>
+	<h1>Гранит</h1>
+	<div class="category__inner">
+		<div class="category__filters">
+			<div class="category__filters--item">
+				<div class="title">Материал</div>
+				<div class="body">
+					<div class="filter-button">Мрамор</div>
+					<div class="filter-button active">Гранит</div>
+					<div class="filter-button">Известняк</div>
+					<div class="filter-button">Кварцит</div>
 				</div>
-				<div class="category__filters--item">
-					<div class="title">Наименование</div>
-					<div class="body">
-						<div class="langs">
-							<span>ENG</span>
-							<span class="active">РУС</span>
+			</div>
+			<div class="category__filters--item">
+				<div class="title">Наименование</div>
+				<div class="body">
+					<div class="langs">
+						<span>ENG</span>
+						<span class="active">РУС</span>
+					</div>
+					<div class="langs-body">
+						<div class="langs-body--item">
+							<div class="langs-item">A</div>
+							<div class="langs-item">B</div>
+							<div class="langs-item">C</div>
+							<div class="langs-item">D</div>
 						</div>
-						<div class="langs-body">
-							<div class="langs-body--item">
-								<div class="langs-item">A</div>
-								<div class="langs-item">B</div>
-								<div class="langs-item">C</div>
-								<div class="langs-item">D</div>
-							</div>
-							<div class="langs-body--item active">
-								<div class="langs-item">А</div>
-								<div class="langs-item">Б</div>
-								<div class="langs-item">В</div>
-								<div class="langs-item">Г</div>
-								<div class="langs-item">Д</div>
-								<div class="langs-item">Е</div>
-								<div class="langs-item">Ж</div>
-								<div class="langs-item">З</div>
-								<div class="langs-item">И</div>
-								<div class="langs-item">К</div>
-								<div class="langs-item">Л</div>
-								<div class="langs-item">М</div>
-								<div class="langs-item">Н</div>
-								<div class="langs-item">О</div>
-								<div class="langs-item">П</div>
-								<div class="langs-item">Р</div>
-								<div class="langs-item">С</div>
-								<div class="langs-item">Т</div>
-								<div class="langs-item">У</div>
-								<div class="langs-item">Ф</div>
-								<div class="langs-item">Х</div>
-								<div class="langs-item">Ч</div>
-								<div class="langs-item">Э</div>
-							</div>
+						<div class="langs-body--item active">
+							<div class="langs-item">А</div>
+							<div class="langs-item">Б</div>
+							<div class="langs-item">В</div>
+							<div class="langs-item">Г</div>
+							<div class="langs-item">Д</div>
+							<div class="langs-item">Е</div>
+							<div class="langs-item">Ж</div>
+							<div class="langs-item">З</div>
+							<div class="langs-item">И</div>
+							<div class="langs-item">К</div>
+							<div class="langs-item">Л</div>
+							<div class="langs-item">М</div>
+							<div class="langs-item">Н</div>
+							<div class="langs-item">О</div>
+							<div class="langs-item">П</div>
+							<div class="langs-item">Р</div>
+							<div class="langs-item">С</div>
+							<div class="langs-item">Т</div>
+							<div class="langs-item">У</div>
+							<div class="langs-item">Ф</div>
+							<div class="langs-item">Х</div>
+							<div class="langs-item">Ч</div>
+							<div class="langs-item">Э</div>
 						</div>
-					</div>
-				</div>
-				<div class="category__filters--item">
-					<div class="body">
-						<div class="filter-button">Новинка</div>
-						<div class="filter-button">Акции</div>
-						<div class="filter-button">На заказ</div>
-					</div>
-				</div>
-				<div class="category__filters--item">
-					<div class="title">Стоимость</div>
-					<div class="body">
-						<div class="filter-slider" data-min="0" data-max="4500" data-step="1"></div>
-						<div class="range-inputs">
-							<input type="text" class="min">
-							<span>-</span>
-							<input type="text" class="max">
-						</div>
-					</div>
-				</div>
-				<div class="category__filters--item">
-					<div class="title">Толщина, мм</div>
-					<div class="body">
-						<div class="filter-button mini">10 (8)</div>
-						<div class="filter-button mini">10 (8)</div>
-						<div class="filter-button mini">15 (1)</div>
-						<div class="filter-button mini">15 (1)</div>
-						<div class="filter-button mini">20 (34)</div>
-						<div class="filter-button mini">20 (34)</div>
-						<div class="filter-button mini">40 (56)</div>
-						<div class="filter-button mini">40 (56)</div>
-					</div>
-				</div>
-				<div class="category__filters--item">
-					<div class="title">Вид товара</div>
-					<div class="body">
-						<div class="filter-button">Плитка</div>
-						<div class="filter-button">Слэб</div>
-						<div class="filter-button">Мозаика</div>
-					</div>
-				</div>
-				<div class="category__filters--item">
-					<div class="title">Обработка</div>
-					<div class="body">
-						<div class="filter-button">Полировка</div>
-						<div class="filter-button">Антик</div>
-						<div class="filter-button">Шлифовка. термо</div>
-					</div>
-				</div>
-				<div class="category__filters--item">
-					<div class="title">Цвета</div>
-					<div class="body">
-						<div class="filter-color-button-wrap">
-							<div class="filter-color-button">
-								<span class="color" style="background: #AD9B87;">&nbsp;</span>
-								<div class="text">бежевый</div>
-							</div>
-							<div class="filter-color-button">
-								<span class="color" style="background: #FFFFFF;">&nbsp;</span>
-								<div class="text">белый</div>
-							</div>
-							<div class="filter-color-button">
-								<span class="color" style="background: #21C9BF;">&nbsp;</span>
-								<div class="text">бирюзовый</div>
-							</div>
-							<div class="filter-color-button">
-								<span class="color" style="background: #9F1C29;">&nbsp;</span>
-								<div class="text">бордовый</div>
-							</div>
-							<div class="filter-color-button">
-								<span class="color" style="background: #6BCCEB;">&nbsp;</span>
-								<div class="text">голубой</div>
-							</div>
-							<div class="filter-color-button">
-								<span class="color" style="background: #F9B043;">&nbsp;</span>
-								<div class="text">желтый</div>
-							</div>
-							<div class="filter-color-button">
-								<span class="color" style="background: #4DC34B;">&nbsp;</span>
-								<div class="text">зеленый</div>
-							</div>
-							<div class="filter-color-button">
-								<span class="color" style="background: #ff0000;">&nbsp;</span>
-								<div class="text">красный</div>
-							</div>
-							<div class="filter-color-button">
-								<span class="color" style="background: #000000;">&nbsp;</span>
-								<div class="text">черный</div>
-							</div>
-							<div class="filter-color-button">
-								<span class="color" style="background: #0000ff;">&nbsp;</span>
-								<div class="text">синий</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="category__filters--item">
-					<div class="title">Страна</div>
-					<div class="body">
-						<div class="filter-button">Россия</div>
-						<div class="filter-button">Не Россия</div>
 					</div>
 				</div>
 			</div>
-			<div class="category__body">
-				<div class="category__body--top">
-					<a href="/" class="clear-filter">Очистить фильтр</a>
-					<div class="open-filter">Фильтр</div>
-					<div class="sort">
-						<div class="select-wrap">
-							<div class="title">Сортировать:</div>
-							<div class="body">
-								<select>
-									<option value="Новизна">Новизна</option>
-									<option value="Цена">Цена</option>
-									<option value="Производитель">Производитель</option>
-								</select>
-							</div>
+			<div class="category__filters--item">
+				<div class="body">
+					<div class="filter-button">Новинка</div>
+					<div class="filter-button">Акции</div>
+					<div class="filter-button">На заказ</div>
+				</div>
+			</div>
+			<div class="category__filters--item">
+				<div class="title">Стоимость</div>
+				<div class="body">
+					<div class="filter-slider" data-min="0" data-max="4500" data-step="1"></div>
+					<div class="range-inputs">
+						<input type="text" class="min">
+						<span>-</span>
+						<input type="text" class="max">
+					</div>
+				</div>
+			</div>
+			<div class="category__filters--item">
+				<div class="title">Толщина, мм</div>
+				<div class="body">
+					<div class="filter-button mini">10 (8)</div>
+					<div class="filter-button mini">10 (8)</div>
+					<div class="filter-button mini">15 (1)</div>
+					<div class="filter-button mini">15 (1)</div>
+					<div class="filter-button mini">20 (34)</div>
+					<div class="filter-button mini">20 (34)</div>
+					<div class="filter-button mini">40 (56)</div>
+					<div class="filter-button mini">40 (56)</div>
+				</div>
+			</div>
+			<div class="category__filters--item">
+				<div class="title">Вид товара</div>
+				<div class="body">
+					<div class="filter-button">Плитка</div>
+					<div class="filter-button">Слэб</div>
+					<div class="filter-button">Мозаика</div>
+				</div>
+			</div>
+			<div class="category__filters--item">
+				<div class="title">Обработка</div>
+				<div class="body">
+					<div class="filter-button">Полировка</div>
+					<div class="filter-button">Антик</div>
+					<div class="filter-button">Шлифовка. термо</div>
+				</div>
+			</div>
+			<div class="category__filters--item">
+				<div class="title">Цвета</div>
+				<div class="body">
+					<div class="filter-color-button-wrap">
+						<div class="filter-color-button">
+							<span class="color" style="background: #AD9B87;">&nbsp;</span>
+							<div class="text">бежевый</div>
+						</div>
+						<div class="filter-color-button">
+							<span class="color" style="background: #FFFFFF;">&nbsp;</span>
+							<div class="text">белый</div>
+						</div>
+						<div class="filter-color-button">
+							<span class="color" style="background: #21C9BF;">&nbsp;</span>
+							<div class="text">бирюзовый</div>
+						</div>
+						<div class="filter-color-button">
+							<span class="color" style="background: #9F1C29;">&nbsp;</span>
+							<div class="text">бордовый</div>
+						</div>
+						<div class="filter-color-button">
+							<span class="color" style="background: #6BCCEB;">&nbsp;</span>
+							<div class="text">голубой</div>
+						</div>
+						<div class="filter-color-button">
+							<span class="color" style="background: #F9B043;">&nbsp;</span>
+							<div class="text">желтый</div>
+						</div>
+						<div class="filter-color-button">
+							<span class="color" style="background: #4DC34B;">&nbsp;</span>
+							<div class="text">зеленый</div>
+						</div>
+						<div class="filter-color-button">
+							<span class="color" style="background: #ff0000;">&nbsp;</span>
+							<div class="text">красный</div>
+						</div>
+						<div class="filter-color-button">
+							<span class="color" style="background: #000000;">&nbsp;</span>
+							<div class="text">черный</div>
+						</div>
+						<div class="filter-color-button">
+							<span class="color" style="background: #0000ff;">&nbsp;</span>
+							<div class="text">синий</div>
 						</div>
 					</div>
 				</div>
-				<div class="category__body--products">
-					<a href="/category1.html" class="product">
-    <div class="image">
-        <div class="labels">
-    <div class="label">НОВИНКА</div>
-    <div class="label label-sale">АКЦИЯ</div>
-    <div class="label label-order">НА ЗАКАЗ</div>
-</div>
-        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
-    </div>
-    <div class="top">
-        <div class="material">Мрамор</div>
-        <div class="price">от 123 €</div>
-    </div>
-    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
-    <div class="link">
-        <div class="arrow-link">Смотреть</div>
-    </div>
-</a>
-					<a href="/category1.html" class="product">
-    <div class="image">
-        <div class="labels">
-    <div class="label">НОВИНКА</div>
-    <div class="label label-sale">АКЦИЯ</div>
-    <div class="label label-order">НА ЗАКАЗ</div>
-</div>
-        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
-    </div>
-    <div class="top">
-        <div class="material">Мрамор</div>
-        <div class="price">от 123 €</div>
-    </div>
-    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
-    <div class="link">
-        <div class="arrow-link">Смотреть</div>
-    </div>
-</a>
-					<a href="/category1.html" class="product">
-    <div class="image">
-        <div class="labels">
-    <div class="label">НОВИНКА</div>
-    <div class="label label-sale">АКЦИЯ</div>
-    <div class="label label-order">НА ЗАКАЗ</div>
-</div>
-        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
-    </div>
-    <div class="top">
-        <div class="material">Мрамор</div>
-        <div class="price">от 123 €</div>
-    </div>
-    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
-    <div class="link">
-        <div class="arrow-link">Смотреть</div>
-    </div>
-</a>
-					<a href="/category1.html" class="product">
-    <div class="image">
-        <div class="labels">
-    <div class="label">НОВИНКА</div>
-    <div class="label label-sale">АКЦИЯ</div>
-    <div class="label label-order">НА ЗАКАЗ</div>
-</div>
-        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
-    </div>
-    <div class="top">
-        <div class="material">Мрамор</div>
-        <div class="price">от 123 €</div>
-    </div>
-    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
-    <div class="link">
-        <div class="arrow-link">Смотреть</div>
-    </div>
-</a>
-					<a href="/category1.html" class="product">
-    <div class="image">
-        <div class="labels">
-    <div class="label">НОВИНКА</div>
-    <div class="label label-sale">АКЦИЯ</div>
-    <div class="label label-order">НА ЗАКАЗ</div>
-</div>
-        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
-    </div>
-    <div class="top">
-        <div class="material">Мрамор</div>
-        <div class="price">от 123 €</div>
-    </div>
-    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
-    <div class="link">
-        <div class="arrow-link">Смотреть</div>
-    </div>
-</a>
-					<a href="/category1.html" class="product">
-    <div class="image">
-        <div class="labels">
-    <div class="label">НОВИНКА</div>
-    <div class="label label-sale">АКЦИЯ</div>
-    <div class="label label-order">НА ЗАКАЗ</div>
-</div>
-        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
-    </div>
-    <div class="top">
-        <div class="material">Мрамор</div>
-        <div class="price">от 123 €</div>
-    </div>
-    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
-    <div class="link">
-        <div class="arrow-link">Смотреть</div>
-    </div>
-</a>
-					<a href="/" class="image-block">
-						<img src="images/dist/big_img.jpg" alt="">
-					</a>
-					<a href="/category1.html" class="product">
-    <div class="image">
-        <div class="labels">
-    <div class="label">НОВИНКА</div>
-    <div class="label label-sale">АКЦИЯ</div>
-    <div class="label label-order">НА ЗАКАЗ</div>
-</div>
-        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
-    </div>
-    <div class="top">
-        <div class="material">Мрамор</div>
-        <div class="price">от 123 €</div>
-    </div>
-    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
-    <div class="link">
-        <div class="arrow-link">Смотреть</div>
-    </div>
-</a>
-					<a href="/category1.html" class="product">
-    <div class="image">
-        <div class="labels">
-    <div class="label">НОВИНКА</div>
-    <div class="label label-sale">АКЦИЯ</div>
-    <div class="label label-order">НА ЗАКАЗ</div>
-</div>
-        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
-    </div>
-    <div class="top">
-        <div class="material">Мрамор</div>
-        <div class="price">от 123 €</div>
-    </div>
-    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
-    <div class="link">
-        <div class="arrow-link">Смотреть</div>
-    </div>
-</a>
-					<a href="/category1.html" class="product">
-    <div class="image">
-        <div class="labels">
-    <div class="label">НОВИНКА</div>
-    <div class="label label-sale">АКЦИЯ</div>
-    <div class="label label-order">НА ЗАКАЗ</div>
-</div>
-        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
-    </div>
-    <div class="top">
-        <div class="material">Мрамор</div>
-        <div class="price">от 123 €</div>
-    </div>
-    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
-    <div class="link">
-        <div class="arrow-link">Смотреть</div>
-    </div>
-</a>
-					<a href="/category1.html" class="product">
-    <div class="image">
-        <div class="labels">
-    <div class="label">НОВИНКА</div>
-    <div class="label label-sale">АКЦИЯ</div>
-    <div class="label label-order">НА ЗАКАЗ</div>
-</div>
-        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
-    </div>
-    <div class="top">
-        <div class="material">Мрамор</div>
-        <div class="price">от 123 €</div>
-    </div>
-    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
-    <div class="link">
-        <div class="arrow-link">Смотреть</div>
-    </div>
-</a>
-					<a href="/category1.html" class="product">
-    <div class="image">
-        <div class="labels">
-    <div class="label">НОВИНКА</div>
-    <div class="label label-sale">АКЦИЯ</div>
-    <div class="label label-order">НА ЗАКАЗ</div>
-</div>
-        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
-    </div>
-    <div class="top">
-        <div class="material">Мрамор</div>
-        <div class="price">от 123 €</div>
-    </div>
-    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
-    <div class="link">
-        <div class="arrow-link">Смотреть</div>
-    </div>
-</a>
-					<a href="/category1.html" class="product">
-    <div class="image">
-        <div class="labels">
-    <div class="label">НОВИНКА</div>
-    <div class="label label-sale">АКЦИЯ</div>
-    <div class="label label-order">НА ЗАКАЗ</div>
-</div>
-        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
-    </div>
-    <div class="top">
-        <div class="material">Мрамор</div>
-        <div class="price">от 123 €</div>
-    </div>
-    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
-    <div class="link">
-        <div class="arrow-link">Смотреть</div>
-    </div>
-</a>
+			</div>
+			<div class="category__filters--item">
+				<div class="title">Страна</div>
+				<div class="body">
+					<div class="filter-button">Россия</div>
+					<div class="filter-button">Не Россия</div>
 				</div>
-				<div class="pagination">
+			</div>
+		</div>
+		<div class="category__body">
+			<div class="category__body--top">
+				<a href="/" class="clear-filter">Очистить фильтр</a>
+				<div class="open-filter">Фильтр</div>
+				<div class="sort">
+					<div class="select-wrap">
+						<div class="title">Сортировать:</div>
+						<div class="body">
+							<select>
+								<option value="Новизна">Новизна</option>
+								<option value="Цена">Цена</option>
+								<option value="Производитель">Производитель</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="category__body--products">
+				<a href="/category1.html" class="product">
+    <div class="image">
+        <div class="labels">
+    <div class="label">НОВИНКА</div>
+    <div class="label label-sale">АКЦИЯ</div>
+    <div class="label label-order">НА ЗАКАЗ</div>
+</div>
+        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
+    </div>
+    <div class="top">
+        <div class="material">Мрамор</div>
+        <div class="price">от 123 €</div>
+    </div>
+    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
+    <div class="link">
+        <div class="arrow-link">Смотреть</div>
+    </div>
+</a>
+				<a href="/category1.html" class="product">
+    <div class="image">
+        <div class="labels">
+    <div class="label">НОВИНКА</div>
+    <div class="label label-sale">АКЦИЯ</div>
+    <div class="label label-order">НА ЗАКАЗ</div>
+</div>
+        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
+    </div>
+    <div class="top">
+        <div class="material">Мрамор</div>
+        <div class="price">от 123 €</div>
+    </div>
+    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
+    <div class="link">
+        <div class="arrow-link">Смотреть</div>
+    </div>
+</a>
+				<a href="/category1.html" class="product">
+    <div class="image">
+        <div class="labels">
+    <div class="label">НОВИНКА</div>
+    <div class="label label-sale">АКЦИЯ</div>
+    <div class="label label-order">НА ЗАКАЗ</div>
+</div>
+        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
+    </div>
+    <div class="top">
+        <div class="material">Мрамор</div>
+        <div class="price">от 123 €</div>
+    </div>
+    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
+    <div class="link">
+        <div class="arrow-link">Смотреть</div>
+    </div>
+</a>
+				<a href="/category1.html" class="product">
+    <div class="image">
+        <div class="labels">
+    <div class="label">НОВИНКА</div>
+    <div class="label label-sale">АКЦИЯ</div>
+    <div class="label label-order">НА ЗАКАЗ</div>
+</div>
+        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
+    </div>
+    <div class="top">
+        <div class="material">Мрамор</div>
+        <div class="price">от 123 €</div>
+    </div>
+    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
+    <div class="link">
+        <div class="arrow-link">Смотреть</div>
+    </div>
+</a>
+				<a href="/category1.html" class="product">
+    <div class="image">
+        <div class="labels">
+    <div class="label">НОВИНКА</div>
+    <div class="label label-sale">АКЦИЯ</div>
+    <div class="label label-order">НА ЗАКАЗ</div>
+</div>
+        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
+    </div>
+    <div class="top">
+        <div class="material">Мрамор</div>
+        <div class="price">от 123 €</div>
+    </div>
+    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
+    <div class="link">
+        <div class="arrow-link">Смотреть</div>
+    </div>
+</a>
+				<a href="/category1.html" class="product">
+    <div class="image">
+        <div class="labels">
+    <div class="label">НОВИНКА</div>
+    <div class="label label-sale">АКЦИЯ</div>
+    <div class="label label-order">НА ЗАКАЗ</div>
+</div>
+        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
+    </div>
+    <div class="top">
+        <div class="material">Мрамор</div>
+        <div class="price">от 123 €</div>
+    </div>
+    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
+    <div class="link">
+        <div class="arrow-link">Смотреть</div>
+    </div>
+</a>
+				<a href="/" class="image-block">
+					<img src="images/dist/big_img.jpg" alt="">
+				</a>
+				<a href="/category1.html" class="product">
+    <div class="image">
+        <div class="labels">
+    <div class="label">НОВИНКА</div>
+    <div class="label label-sale">АКЦИЯ</div>
+    <div class="label label-order">НА ЗАКАЗ</div>
+</div>
+        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
+    </div>
+    <div class="top">
+        <div class="material">Мрамор</div>
+        <div class="price">от 123 €</div>
+    </div>
+    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
+    <div class="link">
+        <div class="arrow-link">Смотреть</div>
+    </div>
+</a>
+				<a href="/category1.html" class="product">
+    <div class="image">
+        <div class="labels">
+    <div class="label">НОВИНКА</div>
+    <div class="label label-sale">АКЦИЯ</div>
+    <div class="label label-order">НА ЗАКАЗ</div>
+</div>
+        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
+    </div>
+    <div class="top">
+        <div class="material">Мрамор</div>
+        <div class="price">от 123 €</div>
+    </div>
+    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
+    <div class="link">
+        <div class="arrow-link">Смотреть</div>
+    </div>
+</a>
+				<a href="/category1.html" class="product">
+    <div class="image">
+        <div class="labels">
+    <div class="label">НОВИНКА</div>
+    <div class="label label-sale">АКЦИЯ</div>
+    <div class="label label-order">НА ЗАКАЗ</div>
+</div>
+        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
+    </div>
+    <div class="top">
+        <div class="material">Мрамор</div>
+        <div class="price">от 123 €</div>
+    </div>
+    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
+    <div class="link">
+        <div class="arrow-link">Смотреть</div>
+    </div>
+</a>
+				<a href="/category1.html" class="product">
+    <div class="image">
+        <div class="labels">
+    <div class="label">НОВИНКА</div>
+    <div class="label label-sale">АКЦИЯ</div>
+    <div class="label label-order">НА ЗАКАЗ</div>
+</div>
+        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
+    </div>
+    <div class="top">
+        <div class="material">Мрамор</div>
+        <div class="price">от 123 €</div>
+    </div>
+    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
+    <div class="link">
+        <div class="arrow-link">Смотреть</div>
+    </div>
+</a>
+				<a href="/category1.html" class="product">
+    <div class="image">
+        <div class="labels">
+    <div class="label">НОВИНКА</div>
+    <div class="label label-sale">АКЦИЯ</div>
+    <div class="label label-order">НА ЗАКАЗ</div>
+</div>
+        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
+    </div>
+    <div class="top">
+        <div class="material">Мрамор</div>
+        <div class="price">от 123 €</div>
+    </div>
+    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
+    <div class="link">
+        <div class="arrow-link">Смотреть</div>
+    </div>
+</a>
+				<a href="/category1.html" class="product">
+    <div class="image">
+        <div class="labels">
+    <div class="label">НОВИНКА</div>
+    <div class="label label-sale">АКЦИЯ</div>
+    <div class="label label-order">НА ЗАКАЗ</div>
+</div>
+        <img src="images/dist/product_pic1.jpg" alt="Бьянко Каррара Джоя / Bianco Carrara Gioia">
+    </div>
+    <div class="top">
+        <div class="material">Мрамор</div>
+        <div class="price">от 123 €</div>
+    </div>
+    <div class="title">Бьянко Каррара Джоя / Bianco Carrara Gioia</div>
+    <div class="link">
+        <div class="arrow-link">Смотреть</div>
+    </div>
+</a>
+			</div>
+			<div class="pagination">
     <a href="/" class="pagination__item pagination__item--prev">Предыдущая</a>
     <a href="/" class="pagination__item active">1</a>
     <a href="/" class="pagination__item">2</a>
@@ -514,9 +512,9 @@
     <a href="/" class="pagination__item">15</a>
     <a href="/" class="pagination__item pagination__item--next">Следующая</a>
 </div>
-			</div>
 		</div>
-		<div class="viewed">
+	</div>
+	<div class="viewed">
     <div class="viewed__inner">
         <div class="viewed__title">Вы смотрели партии</div>
         <div class="viewed__slider">
@@ -618,15 +616,15 @@
         </div>
     </div>
 </div>	
-		<div class="text-block">
+	<div class="text-block">
     <div class="text-block__title">Заголовок seo текста</div>
     <div class="text-block__body">
         <p>Безусловно, базовый вектор развития способствует повышению качества прогресса профессионального сообщества! Как уже неоднократно упомянуто, представители современных социальных резервов объективно рассмотрены соответствующими инстанциями. Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление не оставляет шанса для как самодостаточных, так и внешне зависимых концептуальных решений. Безусловно, синтетическое тестирование прекрасно подходит для реализации новых принципов формирования материально-технической и кадровой базы.</p>
         <p>В рамках спецификации современных стандартов, акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, разоблачены. Являясь всего лишь частью общей картины, явные признаки победы институционализации заблокированы в рамках своих собственных рациональных ограничений.</p>
     </div>
 </div>	
-	</main>
-	
+</main>
+
 	<footer class="footer">
 		<div class="footer__container">
 			<a href="/" class="footer__logo">
@@ -693,7 +691,42 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js/app.min.js"></script>
+</div>
+<div class="product_popup popup4">
+	<div class="product_popup-div"></div>
+	<div class="product_popup-scrolling">
+		<div class="product_popup-wrap">
+			<div class="product_popup-body withform">
+				<form class="form">
+					<div class="form__title">Оставить заявку</div>
+					<div class="form__field">
+						<input type="text" name="name" placeholder="Ваше имя*" required>
+					</div>
+					<div class="form__field">
+						<input type="email" name="email" placeholder="Ваша почта*" required>
+					</div>
+					<div class="form__field">
+						<input type="tel" name="tel" placeholder="Телефон* +7(___)___-__-__" required>
+					</div>
+					<div class="form__field">
+						<textarea placeholder="Комментарий"></textarea>
+					</div>
+					<div class="form__field">
+						<label class="form__checkbox">
+							<input type="checkbox" checked required name="policy">
+							<span>Отправляя форму вы принимаете условия обработки персональных данных</span>
+						</label>
+					</div>
+					<div class="form__field">
+						<button type="submit">Оформить заказ</button>
+					</div>
+					<div class="form__note">обязательные поля для заполнения</div>
+				</form>
+			</div>
+			<div class="product_popup-close"></div>
+		</div>
+	</div>
+</div>
+<script src="js/app.min.js"></script>
 </body>
 </html>
-</div>

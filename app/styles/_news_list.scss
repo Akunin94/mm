@@ -5,6 +5,7 @@
     max-width: $containerWidth;
     width: 100%;
     margin: auto;
+    padding-bottom: 100px;
     @media all and (max-width: 1239px) {
         margin-left: 20px;
         margin-right: 20px;
@@ -147,7 +148,7 @@
 }
 
 .single-news {
-    padding-bottom: 79px;
+    padding-bottom: 0;
     @media all and (max-width: 960px) {
         padding-bottom: 30px;
     }

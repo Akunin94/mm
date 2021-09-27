@@ -202,6 +202,11 @@ $(document).on('click', '.category1 .group .item .buy-button' , function(){
 
 	return false
 });
+$(document).on('click', '.header__cart' , function(){
+	showProductPopup3();
+
+	return false
+});
 
 function showProductPopup(){
 	$('.popup1').addClass('active');
@@ -213,6 +218,10 @@ function showProductPopup1(){
 };
 function showProductPopup2(){
 	$('.popup3').addClass('active');
+	$('html').addClass('overflowHidden');
+};
+function showProductPopup3(){
+	$('.popup4').addClass('active');
 	$('html').addClass('overflowHidden');
 };
 function hideProductPopup(){
