@@ -169,10 +169,12 @@ $block: '.header';
                 min-width: 35px;
                 max-width: 35px;
                 padding: 10px;
+                margin: 0;
             }
             button[type='submit'] {
                 background: #fff;
                 padding: 0;
+                margin: 0;
                 &:before {
                     border-color: #eaeaea;
                 }

@@ -235,6 +235,10 @@
     &__body {
         flex-grow: 1;
         margin: 0 0 50px;
+        max-width: calc(100% - 300px);
+        @media all and (max-width: 930px) {
+            max-width: none;
+        }
         &--top {
             display: flex;
             align-items: center;

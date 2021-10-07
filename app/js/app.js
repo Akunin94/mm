@@ -190,6 +190,13 @@ $(document).on('keydown', function (event) {
         hideProductPopup();
     }
 });
+$(document).on('click', function (event) {
+	if ( $('.product_popup.active').length ) {
+		if ($(event.target).closest('.product_popup-body').length || $(event.target).closest('.category1 .group .item .image').length || $(event.target).closest('.category1 .group .item .size').length || $(event.target).closest('.product-view .button a').length || $(event.target).closest('.category1 .group .item .buy-button').length || $(event.target).closest('.header__cart').length || $(event.target).closest('.product_popup .product-view .buy-button').length || $(event.target).closest('.product_popup-close').length) return;
+		hideProductPopup();
+		event.stopPropagation();
+	}
+});
 $(document).on('click', '.product_popup-close' , hideProductPopup);
 $(document).on('click', '.category1 .group .item .image, .category1 .group .item .size' , showProductPopup);
 $(document).on('click', '.product-view .button a' , function(){
@@ -197,7 +204,7 @@ $(document).on('click', '.product-view .button a' , function(){
 
 	return false
 });
-$(document).on('click', '.category1 .group .item .buy-button' , function(){
+$(document).on('click', '.category1 .group .item .buy-button, .product_popup .product-view .buy-button' , function(){
 	showProductPopup2();
 
 	return false
@@ -210,23 +217,23 @@ $(document).on('click', '.header__cart' , function(){
 
 function showProductPopup(){
 	$('.popup1').addClass('active');
-	$('html').addClass('overflowHidden');
+	$('body').addClass('overflowHidden');
 };
 function showProductPopup1(){
 	$('.popup2').addClass('active');
-	$('html').addClass('overflowHidden');
+	$('body').addClass('overflowHidden');
 };
 function showProductPopup2(){
 	$('.popup3').addClass('active');
-	$('html').addClass('overflowHidden');
+	$('body').addClass('overflowHidden');
 };
 function showProductPopup3(){
 	$('.popup4').addClass('active');
-	$('html').addClass('overflowHidden');
+	$('body').addClass('overflowHidden');
 };
 function hideProductPopup(){
 	$('.product_popup.active:last').removeClass('active');
-	$('html').removeClass('overflowHidden');
+	$('body').removeClass('overflowHidden');
 };
 // PRODUCT PAGE POPUP END
 
