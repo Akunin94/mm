@@ -169,12 +169,10 @@ $block: '.header';
                 min-width: 35px;
                 max-width: 35px;
                 padding: 10px;
-                margin: 0;
             }
             button[type='submit'] {
                 background: #fff;
                 padding: 0;
-                margin: 0;
                 &:before {
                     border-color: #eaeaea;
                 }
@@ -235,6 +233,7 @@ $block: '.header';
             overflow: hidden;
             transition: 0.2s;
             cursor: pointer;
+            margin: 0;
             svg {
                 stroke: #a0a3bd;
             }
@@ -249,6 +248,7 @@ $block: '.header';
             max-width: 44px;
             position: relative;
             cursor: pointer;
+            margin: 0;
             &:before {
                 position: absolute;
                 left: 0;
