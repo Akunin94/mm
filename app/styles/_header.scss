@@ -195,6 +195,7 @@ $block: '.header';
             transition: 0.2s;
             min-width: 195px;
             max-width: 195px;
+            margin: 0;
             &::placeholder {
                 color: #d4d4d450;
             }
