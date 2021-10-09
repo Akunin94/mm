@@ -9,7 +9,7 @@
     &__container {
         max-width: $containerWidth;
         margin: auto;
-        padding: 30px 0;
+        padding: 35px 0;
         display: flex;
         align-items: center;
         @media all and (max-width: 1239px) {
@@ -26,7 +26,7 @@
             align-items: center;
             justify-content: center;
         }
-        @media all and (max-width: 360px) {
+        @media all and (max-width: 425px) {
             padding-left: 30px;
             padding-right: 30px;
         }
@@ -60,7 +60,7 @@
             margin-right: 0;
             margin-left: 0;
         }
-        @media all and (max-width: 360px) {
+        @media all and (max-width: 425px) {
             min-width: 100%;
             max-width: none;
         }
@@ -74,11 +74,11 @@
         & > li {
             display: block;
             &:not(:last-child) {
-                margin-bottom: 7px;
+                margin-bottom: 4px;
                 @media all and (max-width: 640px) {
                     margin-bottom: 16px;
                 }
-                @media all and (max-width: 360px) {
+                @media all and (max-width: 425px) {
                     margin-bottom: 11px;
                 }
             }
@@ -114,7 +114,7 @@
             margin-right: 0;
             text-align: center;
         }
-        @media all and (max-width: 360px) {
+        @media all and (max-width: 425px) {
             text-align: left;
             max-width: none;
             min-width: 100%;
@@ -145,13 +145,13 @@
                 &:hover {
                     opacity: 0.7;
                 }
-                @media all and (max-width: 360px) {
+                @media all and (max-width: 425px) {
                     &:first-child {
                         margin-left: 0;
                     }
                 }
             }
-            @media all and (max-width: 360px) {
+            @media all and (max-width: 425px) {
                 padding-left: 0;
             }
         }
@@ -174,7 +174,7 @@
             margin-left: auto;
             margin-bottom: 40px;
         }
-        @media all and (max-width: 360px) {
+        @media all and (max-width: 425px) {
             max-width: none;
             min-width: 100%;
             align-items: flex-start;
@@ -251,7 +251,7 @@
             align-items: center;
             margin-right: auto;
         }
-        @media all and (max-width: 360px) {
+        @media all and (max-width: 425px) {
             min-width: 100%;
             max-width: none;
             align-items: flex-start;
