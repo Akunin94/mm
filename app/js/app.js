@@ -141,7 +141,16 @@ $(function(){
 		slider.noUiSlider.on('update', function(values){
 			inputMin.val(+values[0]);
 			inputMax.val(+values[1])
+			console.log(1)
 		})
+
+		inputMin.on('input', function(){
+			slider.noUiSlider.set([$(this).val(), null])
+			console.log(2)
+		});
+		inputMax.on('input', function(){
+			slider.noUiSlider.set([null, $(this).val()])
+		});
 	});
 	// FILTER SLIDER END
 });
