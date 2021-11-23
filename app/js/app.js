@@ -6,11 +6,15 @@ import lightGallery from 'lightgallery';
 
 $(function(){
 	// POPUP PRODUCT GALLERY START
-	lightGallery(document.getElementById('popup-gallery'), {
-        speed: 500,
-		counter: false,
-		selector: 'img'
-    });
+	$('.product_popup .product-view .left').each(function(){
+		var $gallery = $(this).get(0);
+
+		lightGallery($gallery, {
+			speed: 500,
+			counter: false,
+			selector: 'img'
+		});
+	});
 	// POPUP PRODUCT GALLERY START
 
 	// MAIN PAGE SLIDER START
@@ -140,13 +144,11 @@ $(function(){
 
 		slider.noUiSlider.on('update', function(values){
 			inputMin.val(+values[0]);
-			inputMax.val(+values[1])
-			console.log(1)
+			inputMax.val(+values[1]);
 		})
 
 		inputMin.on('input', function(){
 			slider.noUiSlider.set([$(this).val(), null])
-			console.log(2)
 		});
 		inputMax.on('input', function(){
 			slider.noUiSlider.set([null, $(this).val()])
